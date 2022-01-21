@@ -1,18 +1,11 @@
 import React, { useState, useMemo } from 'react';
 
-import Logo from './components/logo/Logo';
+import Header from './components/header/Header';
 import Counter from './components/counter/Counter';
-// import Input from './components/input/Input';
-// import ClassCounter from './components/counter/ClassCounter';
+import PostForm from './components/postForm/PostForm';
+import PostFilter from './components/postFilter/PostFilter';
 import PostList from './components/postList/PostList';
 import './App.css';
-// import MyButton from './components/shared/button/MyButton';
-// import MyInput from './components/shared/input/MyInput';
-import PostForm from './components/postForm/PostForm';
-import MySelect from './components/shared/select/MySelect';
-import MyInput from './components/shared/input/MyInput';
-import PostFilter from './components/postFilter/PostFilter';
-import Header from './components/header/Header';
 
 function App() {
   const [posts, setPosts] = useState([
@@ -26,7 +19,7 @@ function App() {
   // const [searchQuery, setSearchQuery] = useState('');
 
   const sortedPosts = useMemo(() => {
-    console.log('Sorted Posts function');
+    // console.log('Sorted Posts function');
     if (filter.sort) {
       return [...posts].sort((a, b) =>
         a[filter.sort].localeCompare(b[filter.sort]),
@@ -55,8 +48,6 @@ function App() {
       <div className="AppWrapper">
         <Counter />
         <hr style={{ margin: '15px, 0' }} />
-        {/* <ClassCounter /> */}
-        {/* <Input /> */}
         <PostForm create={createPost} />
         <hr style={{ margin: '15px, 0' }} />
         <PostFilter filter={filter} setFilter={setFilter} />

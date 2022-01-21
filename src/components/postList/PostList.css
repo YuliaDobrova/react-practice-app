@@ -21,23 +21,3 @@
 .post:focus {
   border: 2px solid rgba(97, 218, 251, 1);
 }
-/* .post__btn {
-  border: 0;
-  outline: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 10px 16px 10px 16px;
-  color: #61dafb;
-  background-color: rgba(139, 152, 178, 0.5);
-  border: 1px solid transparent;
-  border-radius: 38px;
-  cursor: pointer;
-  margin-top: 40px;
-  margin: 5px;
-} */
-/* .post__btn:hover,
-.post__btn:focus {
-  border: 1px solid #61dafb;
-  background-color: rgba(139, 152, 178, 0.75);
-} */
