@@ -1,0 +1,58 @@
+/* .App-logo {
+  position: absolute;
+  color: #61dafb;
+  top: 20px;
+}
+.App-logo.left {
+  right: 0px;
+  left: 20px;
+}
+.App-logo.right {
+  left: 0;
+  right: 20px;
+} */
+.App-logo.left {
+  position: absolute;
+  color: #61dafb;
+  top: 10px;
+  left: 10px;
+}
+
+.App-logo.right {
+  position: absolute;
+  color: #61dafb;
+  top: 10px;
+  right: 10px;
+}
+
+.App-logo-img {
+  fill: #61dafb;
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.App-logo-img.left {
+  animation: App-logo-spin-left infinite 25s linear;
+}
+
+.App-logo-img.right {
+  animation: App-logo-spin-right infinite 25s linear;
+}
+
+@keyframes App-logo-spin-left {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes App-logo-spin-right {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

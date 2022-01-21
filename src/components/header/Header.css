@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  position: relative;
+}
+
+.header-title {
+  display: block;
+
+  min-width: 550px;
+  font-size: 40px;
+  line-height: 1.22;
+  margin: 25px auto 25px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 50%;
+
+  text-shadow: 0 0 20px #61dafb, 1px 1px 20px #61dafb, 2px 2px 20px #61dafb,
+    -1px -1px 20px #61dafb, -2px -2px 20px #61dafb;
+}
+/* @media screen and (min-width: 768px) {
+    min-width: 353px;
+    margin-bottom: 27px;
+
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 589px;
+    margin-bottom: 52px;
+
+    font-size: 50px;
+    line-height: 1.22;
+  }
+} */
+
+.animate-title {
+  text-shadow: 0 0 20px #61dafb, 1px 1px 20px #61dafb, 2px 2px 20px #61dafb,
+    -1px -1px 20px #61dafb, -2px -2px 20px #61dafb;
+  animation: glow 50s linear infinite alternate;
+}
+/* @keyframes glow {
+  0% {
+    text-shadow: 0 0 20px $preload-second-color,
+      1px 1px 20px $preload-second-color, 2px 2px 20px $preload-second-color,
+      -1px -1px 20px $preload-second-color, -2px -2px 20px $preload-second-color;
+  }
+  10% {
+    text-shadow: 0 0 20px $glow-color, 1px 1px 20px $glow-color,
+      2px 2px 20px $glow-color, -1px -1px 20px $glow-color,
+      -2px -2px 20px $glow-color;
+  }
+  20% {
+    text-shadow: 0 0 20px $preload-second-color,
+      1px 1px 20px $preload-second-color, 2px 2px 20px $preload-second-color,
+      -1px -1px 20px $preload-second-color, -2px -2px 20px $preload-second-color;
+  }
+  30% {
+    text-shadow: 0 0 20px $glow-color, 1px 1px 20px $glow-color,
+      2px 2px 20px $glow-color, -1px -1px 20px $glow-color,
+      -2px -2px 20px $glow-color;
+  }
+  35% {
+    text-shadow: 0 0 20px $preload-second-color,
+      1px 1px 20px $preload-second-color, 2px 2px 20px $preload-second-color,
+      -1px -1px 20px $preload-second-color, -2px -2px 20px $preload-second-color;
+  }
+  40% {
+    text-shadow: 0 0 20px $glow-midle-color, 1px 1px 20px $glow-midle-color,
+      2px 2px 20px $glow-midle-color, -1px -1px 20px $glow-midle-color,
+      -2px -2px 20px $glow-midle-color;
+  }
+  50% {
+    text-shadow: 0 0 20px $preload-second-color,
+      1px 1px 20px $preload-second-color, 2px 2px 20px $preload-second-color,
+      -1px -1px 20px $preload-second-color, -2px -2px 20px $preload-second-color;
+  }
+  60% {
+    text-shadow: 0 0 20px $glow-color, 1px 1px 20px $glow-color,
+      2px 2px 20px $glow-color, -1px -1px 20px $glow-color,
+      -2px -2px 20px $glow-color;
+  }
+  70% {
+    text-shadow: 0 0 20px $preload-second-color,
+      1px 1px 20px $preload-second-color, 2px 2px 20px $preload-second-color,
+      -1px -1px 20px $preload-second-color, -2px -2px 20px $preload-second-color;
+  }
+  80% {
+    text-shadow: 0 0 20px $glow-color, 1px 1px 20px $glow-color,
+      2px 2px 20px $glow-color, -1px -1px 20px $glow-color,
+      -2px -2px 20px $glow-color;
+  }
+  90% {
+    text-shadow: 0 0 20px $preload-second-color,
+      1px 1px 20px $preload-second-color, 2px 2px 20px $preload-second-color,
+      -1px -1px 20px $preload-second-color, -2px -2px 20px $preload-second-color;
+  }
+  100% {
+    text-shadow: 0 0 20px $glow-midle-color, 1px 1px 20px $glow-midle-color,
+      2px 2px 20px $glow-midle-color, -1px -1px 20px $glow-midle-color,
+      -2px -2px 20px $glow-midle-color;
+  }
+} */
