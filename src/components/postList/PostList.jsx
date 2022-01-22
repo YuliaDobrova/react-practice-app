@@ -3,6 +3,10 @@ import PostItem from './postItem/PostItem';
 import './PostList.css';
 
 const PostList = ({ posts, title, remove }) => {
+  if (!posts.length) {
+    return <div className="PostsNotFound">Posts not found</div>;
+  }
+
   return (
     <div className="post__wrapper">
       <h1 style={{ textAlign: 'center' }}>{title}</h1>

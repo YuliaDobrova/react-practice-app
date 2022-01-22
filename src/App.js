@@ -6,6 +6,9 @@ import PostForm from './components/postForm/PostForm';
 import PostFilter from './components/postFilter/PostFilter';
 import PostList from './components/postList/PostList';
 import './App.css';
+import Modal from './components/modal/Modal';
+import MyButton from './components/shared/button/MyButton';
+import AccordionItem from './components/accordionItem/AccordionItem';
 
 function App() {
   const [posts, setPosts] = useState([
@@ -17,6 +20,7 @@ function App() {
   const [filter, setFilter] = useState({ sort: '', query: '' });
   // const [selectedSort, setSelectedSort] = useState('');
   // const [searchQuery, setSearchQuery] = useState('');
+  const [modalActive, setModalActive] = useState(false);
 
   const sortedPosts = useMemo(() => {
     // console.log('Sorted Posts function');
@@ -47,20 +51,33 @@ function App() {
       <Header />
       <div className="AppWrapper">
         <Counter />
-        <hr style={{ margin: '15px, 0' }} />
-        <PostForm create={createPost} />
-        <hr style={{ margin: '15px, 0' }} />
+        <hr style={{ margin: 15 }} />
+        <PostForm create={createPost} setModalActive={setModalActive} />
+
+        <hr style={{ margin: 15 }} />
+        <PostList
+          remove={removePost}
+          posts={sortedAndSearchedPosts}
+          title="Post List"
+        />
+        <MyButton
+          onClick={() => {
+            setModalActive(true);
+          }}
+        >
+          Add New Post
+        </MyButton>
+        <hr style={{ margin: 15 }} />
         <PostFilter filter={filter} setFilter={setFilter} />
-        {/* Условная отрисовка */}
-        {sortedAndSearchedPosts.length ? (
-          <PostList
-            remove={removePost}
-            posts={sortedAndSearchedPosts}
-            title="Post List"
-          />
-        ) : (
-          <div className="PostsNotFound">Posts not found</div>
-        )}
+        <hr style={{ margin: 15 }} />
+        <AccordionItem
+          title="Click the accordion below to expand/collapse the accordion content. "
+          description="This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
+        />
+        <hr style={{ margin: 15 }} />
+        <Modal active={modalActive} setActive={setModalActive}>
+          <PostForm create={createPost} />
+        </Modal>
       </div>
     </>
   );

@@ -7,6 +7,7 @@ const Header = () => {
     <header className="header">
       <Logo className="left" />
       <Logo className="right" />
+
       <h1 className="header-title">React JS fundamental course</h1>
     </header>
   );
