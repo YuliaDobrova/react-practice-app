@@ -1,0 +1,26 @@
+.post-list-item {
+  margin-right: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.post-list-img {
+  width: 200px;
+  height: 120px;
+  border-radius: 10px;
+  transition-duration: 2000ms;
+  transition-property: initial;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.post-list-img:hover {
+  transform: scale(1.05);
+}
+
+.post-list-item-title {
+  text-align: center;
+}
+.post-list-item-text {
+  text-align: center;
+}

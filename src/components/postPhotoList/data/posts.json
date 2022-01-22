@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Photo 1",
+    "text": "Photo description 1",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
+  },
+  {
+    "id": "2",
+    "title": "Photo 2",
+    "text": "Photo description 2",
+    "imgUrl": "https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Photo 3",
+    "text": "Photo description 3",
+    "imgUrl": "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGhvdG9ncmFwaGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+  },
+  {
+    "id": "4",
+    "title": "Photo 4",
+    "text": "Photo description 4",
+    "imgUrl": "https://s0.rbk.ru/v6_top_pics/media/img/4/74/756256715374744.jpg"
+  }
+]

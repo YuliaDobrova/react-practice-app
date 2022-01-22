@@ -5,6 +5,7 @@ import Counter from './components/counter/Counter';
 import PostForm from './components/postForm/PostForm';
 import PostFilter from './components/postFilter/PostFilter';
 import PostList from './components/postList/PostList';
+import PostPhotoList from './components/postPhotoList';
 import './App.css';
 import Modal from './components/modal/Modal';
 import MyButton from './components/shared/button/MyButton';
@@ -51,6 +52,8 @@ function App() {
       <Header />
       <div className="AppWrapper">
         <Counter />
+        <hr style={{ margin: 15 }} />
+        <PostPhotoList />
         <hr style={{ margin: 15 }} />
         <PostForm create={createPost} setModalActive={setModalActive} />
 

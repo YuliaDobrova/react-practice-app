@@ -9,7 +9,15 @@ const PostList = ({ posts, title, remove }) => {
 
   return (
     <div className="post__wrapper">
-      <h1 style={{ textAlign: 'center' }}>{title}</h1>
+      <h1
+        style={{
+          textAlign: 'center',
+          textTransform: 'uppercase',
+          fontSize: '24px',
+        }}
+      >
+        {title}
+      </h1>
       {posts.map((post, index) => (
         <PostItem
           remove={remove}
