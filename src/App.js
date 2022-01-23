@@ -18,9 +18,9 @@ function App() {
     { id: 3, title: 'PHP', body: 'Description fff' },
   ]);
 
-  const [filter, setFilter] = useState({ sort: '', query: '' });
   // const [selectedSort, setSelectedSort] = useState('');
   // const [searchQuery, setSearchQuery] = useState('');
+  const [filter, setFilter] = useState({ sort: '', query: '' });
   const [modalActive, setModalActive] = useState(false);
 
   const sortedPosts = useMemo(() => {
@@ -41,6 +41,7 @@ function App() {
 
   const createPost = newPost => {
     setPosts([...posts, newPost]);
+    setModalActive(false);
   };
 
   const removePost = post => {
@@ -55,9 +56,6 @@ function App() {
         <hr style={{ margin: 15 }} />
         <PostPhotoList />
         <hr style={{ margin: 15 }} />
-        <PostForm create={createPost} setModalActive={setModalActive} />
-
-        <hr style={{ margin: 15 }} />
         <PostList
           remove={removePost}
           posts={sortedAndSearchedPosts}
@@ -70,6 +68,8 @@ function App() {
         >
           Add New Post
         </MyButton>
+        <hr style={{ margin: 15 }} />
+        <PostForm create={createPost} setModalActive={setModalActive} />
         <hr style={{ margin: 15 }} />
         <PostFilter filter={filter} setFilter={setFilter} />
         <hr style={{ margin: 15 }} />
