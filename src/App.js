@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { usePosts } from './hooks/usePosts';
 import { getPageCount, getPagesArray } from './utils/pages';
@@ -41,13 +41,6 @@ function App() {
   // CREATE CUSTOM HOOK  usePagination
 
   let pagesArray = getPagesArray(totalPages);
-  // console.log(pagesArray);
-
-  // let pagesArray = [];
-  // for (let i = 0; i < totalPages; i++) {
-  //   pagesArray.push(i + 1);
-  // }
-  // console.log(pagesArray);
 
   const [fetchPosts, isPostsLoading, postError] = useFetching(
     async (limit, page) => {
@@ -115,7 +108,6 @@ function App() {
           {pagesArray.map(p => (
             <span
               onClick={() => changePage(p)}
-              // onClick={() => setPage(p)}
               key={p}
               className={page === p ? 'pageBtn current' : 'pageBtn'}
             >
