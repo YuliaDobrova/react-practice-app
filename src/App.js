@@ -1,42 +1,32 @@
 import React, { useEffect, useState } from 'react';
 
 import { usePosts } from './hooks/usePosts';
-import { getPageCount, getPagesArray } from './utils/pages';
+import { getPageCount } from './utils/pages';
 import Header from './components/header/Header';
 import Counter from './components/counter/Counter';
 import PostForm from './components/postForm/PostForm';
 import PostFilter from './components/postFilter/PostFilter';
 import PostList from './components/postList/PostList';
 import PostPhotoList from './components/postPhotoList';
-import Modal from './components/modal/Modal';
+import Modal from './components/shared/modal/Modal';
 import MyButton from './components/shared/button/MyButton';
 import AccordionItem from './components/accordionItem/AccordionItem';
 import PostService from './API/PostService';
 import Loader from './components/shared/loader/Loader';
 import useFetching from './hooks/useFetching';
+import Pagination from './components/shared/pagination/Pagination';
 import './App.css';
 
 function App() {
   const [posts, setPosts] = useState([]);
   const [filter, setFilter] = useState({ sort: '', query: '' });
-  const [modalActive, setModalActive] = useState(false);
+  const [modalFormActive, setModalFormActive] = useState(false);
+
   const [totalPages, setTotalPages] = useState(0);
   const [limit, setLimit] = useState(10);
   const [page, setPage] = useState(1);
 
   const sortedAndSearchedPosts = usePosts(posts, filter.sort, filter.query);
-
-  // const memoArrayPages = useMemo(() => {
-  //   let pagesArray = [];
-  //   for (let i = 0; i < totalPages; i++) {
-  //     pagesArray.push(i + 1);
-  //   }
-  //   return pagesArray;
-  // }, [totalPages]);
-  // console.log(memoArrayPages);
-  // CREATE CUSTOM HOOK  usePagination
-
-  let pagesArray = getPagesArray(totalPages);
 
   const [fetchPosts, isPostsLoading, postError] = useFetching(
     async (limit, page) => {
@@ -53,7 +43,7 @@ function App() {
 
   const createPost = newPost => {
     setPosts([...posts, newPost]);
-    setModalActive(false);
+    setModalFormActive(false);
   };
 
   const removePost = post => {
@@ -64,14 +54,6 @@ function App() {
     setPage(page);
     fetchPosts(limit, page);
   };
-
-  // useEffect(() => {
-  //   fetchPosts();
-  // }, [page]);
-
-  // const changePage = page => {
-  //   setPage(page);
-  // };
 
   return (
     <>
@@ -100,30 +82,23 @@ function App() {
             title="Post List"
           />
         )}
-        <div className="pageWrapper">
-          {pagesArray.map(p => (
-            <span
-              onClick={() => changePage(p)}
-              key={p}
-              className={page === p ? 'pageBtn current' : 'pageBtn'}
-            >
-              {p}
-            </span>
-          ))}
-        </div>
-
+        <Pagination
+          page={page}
+          changePage={changePage}
+          totalPages={totalPages}
+        />
         <hr style={{ margin: 15 }} />
         <MyButton
           onClick={() => {
-            setModalActive(true);
+            setModalFormActive(true);
           }}
         >
           Add New Post
         </MyButton>
         <hr style={{ margin: 15 }} />
-        <PostForm create={createPost} setModalActive={setModalActive} />
+        <PostForm create={createPost} />
 
-        <Modal active={modalActive} setActive={setModalActive}>
+        <Modal active={modalFormActive} setActive={setModalFormActive}>
           <PostForm create={createPost} />
         </Modal>
       </div>
