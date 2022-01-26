@@ -21,9 +21,9 @@ const PostPhotoItem = ({ imgUrl, title, text, setModalActive }) => {
         <p className="post-list-item-text">{text}</p>
       </li>
       <Modal active={modalPhotoActive} setActive={setModalPhotoActive}>
-        {/* <div className="post-list-img-large-wrapper"> */}
-        <img className="post-list-img-large" src={imgUrl} alt={text} />
-        {/* </div> */}
+        <div className="post-list-img-large-wrapper">
+          <img className="post-list-img-large" src={imgUrl} alt={text} />
+        </div>
       </Modal>
     </>
   );

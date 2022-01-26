@@ -25,14 +25,13 @@
   text-align: center;
 }
 
-/* .post-list-img-large-wrapper {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-} */
+.post-list-img-large-wrapper {
+}
 
 .post-list-img-large {
-  /* width: 1400px; */
-  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 500px;
   border-radius: 30px;
 }

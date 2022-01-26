@@ -28,4 +28,5 @@
 
 .modal-content.active {
   transform: scale(1);
+  width: 50vw;
 }
