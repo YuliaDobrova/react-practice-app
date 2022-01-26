@@ -8,11 +8,11 @@ const Counter = () => {
 
   function increment() {
     setCount(count + 1);
-    console.log(count);
+    // console.log(count);
   }
   function decrement() {
     setCount(count - 1);
-    console.log(count);
+    // console.log(count);
   }
 
   return (

@@ -11,15 +11,18 @@ const PostList = ({ posts, title, remove }) => {
 
   return (
     <div className="post__wrapper">
-      <h1
-        style={{
-          textAlign: 'center',
-          textTransform: 'uppercase',
-          fontSize: '24px',
-        }}
-      >
-        {title}
-      </h1>
+      <h1 className="post__title">{title}</h1>
+      <p className="post__title-text">
+        fetched from{' '}
+        <a
+          className="post__title-link"
+          href="https://jsonplaceholder.typicode.com/posts"
+          target="_blank"
+          rel="noreferrer"
+        >
+          jsonplaceholder.typicode.com
+        </a>
+      </p>
       <TransitionGroup>
         {posts.map((post, index) => (
           <CSSTransition key={post.id} timeout={500} classNames="post">

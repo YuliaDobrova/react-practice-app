@@ -3,6 +3,8 @@
 
   text-align: center;
   margin-bottom: 10px;
+  text-shadow: 0 0 20px #61dafb, 1px 1px 20px #61dafb, 1px 1px 20px #61dafb,
+    -1px -1px 20px #61dafb, -1px -1px 20px #61dafb;
 }
 .post-list {
   display: flex;
