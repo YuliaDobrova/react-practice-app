@@ -17,11 +17,7 @@ import useFetching from './hooks/useFetching';
 import './App.css';
 
 function App() {
-  const [posts, setPosts] = useState([
-    { id: 1, title: 'Javascript', body: 'Description aaa' },
-    { id: 2, title: 'Python', body: 'Description ccc' },
-    { id: 3, title: 'PHP', body: 'Description fff' },
-  ]);
+  const [posts, setPosts] = useState([]);
   const [filter, setFilter] = useState({ sort: '', query: '' });
   const [modalActive, setModalActive] = useState(false);
   const [totalPages, setTotalPages] = useState(0);
@@ -53,7 +49,7 @@ function App() {
 
   useEffect(() => {
     fetchPosts(limit, page);
-  }, []);
+  }, [limit, page]);
 
   const createPost = newPost => {
     setPosts([...posts, newPost]);
@@ -126,7 +122,7 @@ function App() {
         </MyButton>
         <hr style={{ margin: 15 }} />
         <PostForm create={createPost} setModalActive={setModalActive} />
-        <hr style={{ margin: 15 }} />
+
         <Modal active={modalActive} setActive={setModalActive}>
           <PostForm create={createPost} />
         </Modal>
