@@ -1,32 +1,30 @@
 import React, { useState } from 'react';
 import Modal from '../../shared/modal/Modal';
-import './PostPhotoItem.css';
+import './PhotoItem.css';
 
-const PostPhotoItem = ({ imgUrl, title, text, setModalActive }) => {
+const PhotoItem = ({ imgUrl, title, text, setModalActive }) => {
   const [modalPhotoActive, setModalPhotoActive] = useState(false);
   return (
     <>
-      <li className="post-list-item">
+      <li className="photo-list-item">
         <img
           onClick={() => {
             setModalPhotoActive(true);
           }}
-          className="post-list-img"
+          className="photo-list-img"
           src={imgUrl}
           alt={text}
           width="200"
           height="150"
         />
-        <h4 className="post-list-item-title">{title}</h4>
-        <p className="post-list-item-text">{text}</p>
+        <h4 className="photo-list-item-title">{title}</h4>
+        <p className="photo-list-item-text">{text}</p>
       </li>
       <Modal active={modalPhotoActive} setActive={setModalPhotoActive}>
-        <div className="post-list-img-large-wrapper">
-          <img className="post-list-img-large" src={imgUrl} alt={text} />
-        </div>
+        <img className="photo-list-img-large" src={imgUrl} alt={text} />
       </Modal>
     </>
   );
 };
 
-export default PostPhotoItem;
+export default PhotoItem;

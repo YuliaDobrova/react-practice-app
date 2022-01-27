@@ -1,4 +1,4 @@
-.post-list-title {
+.photo-list-title {
   text-transform: uppercase;
 
   text-align: center;
@@ -6,7 +6,7 @@
   text-shadow: 0 0 20px #61dafb, 1px 1px 20px #61dafb, 1px 1px 20px #61dafb,
     -1px -1px 20px #61dafb, -1px -1px 20px #61dafb;
 }
-.post-list {
+.photo-list {
   display: flex;
   list-style: none;
   justify-content: center;
