@@ -16,14 +16,16 @@ import Loader from './components/shared/loader/Loader';
 import useFetching from './hooks/useFetching';
 import Pagination from './components/shared/pagination/Pagination';
 import './App.css';
+import BackToTop from './components/backToTop/BackToTop';
 
 function App() {
   const [posts, setPosts] = useState([]);
   const [filter, setFilter] = useState({ sort: '', query: '' });
   const [modalFormActive, setModalFormActive] = useState(false);
   const [totalPages, setTotalPages] = useState(0);
-  const [limit, setLimit] = useState(10);
   const [page, setPage] = useState(1);
+  // const [limit, setLimit] = useState(10);
+  const limit = 10;
 
   const sortedAndSearchedPosts = usePosts(posts, filter.sort, filter.query);
 
@@ -53,6 +55,18 @@ function App() {
     setPage(page);
     fetchPosts(limit, page);
   };
+
+  // TO TOP BUTTON
+  const [showButton, setShowButton] = useState(false);
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -100,6 +114,7 @@ function App() {
         <Modal active={modalFormActive} setActive={setModalFormActive}>
           <PostForm create={createPost} />
         </Modal>
+        {showButton && <BackToTop />}
       </div>
     </>
   );
