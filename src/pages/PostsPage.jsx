@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PostService from '../API/PostService';
 import PostFilter from '../components/postFilter/PostFilter';
 import PostForm from '../components/postForm/PostForm';
@@ -31,9 +31,9 @@ const Posts = () => {
     },
   );
 
-  // useEffect(() => {
-  //   fetchPosts(limit, page);
-  // }, [limit, page]);
+  useEffect(() => {
+    fetchPosts(limit, page);
+  }, []);
 
   const createPost = newPost => {
     setPosts([...posts, newPost]);
