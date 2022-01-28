@@ -71,7 +71,9 @@
   transform: translateX(-500px);
   transition: all 700ms ease-in;
 } */
-
+.posr__btns {
+  display: flex;
+}
 .PostsNotFound {
   text-align: center;
   font-size: 24px;

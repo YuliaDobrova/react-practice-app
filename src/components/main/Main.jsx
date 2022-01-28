@@ -4,6 +4,7 @@ import Container from '../container/Container';
 import Loader from '../shared/loader/Loader';
 import mainRoutes from '../../routes/mainRoutes';
 import './Main.css';
+import PostsIdPage from '../../pages/PostsIdPage';
 
 const Main = () => {
   return (
@@ -18,6 +19,7 @@ const Main = () => {
                 key={route.name}
               />
             ))}
+            <Route path="/posts/:id" element={<PostsIdPage />} />
             <Route path="/" element={<Navigate to="/home" />} />
           </Routes>
         </Suspense>

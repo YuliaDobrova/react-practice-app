@@ -61,6 +61,5 @@ select:focus option {
   color: initial;
 
   background: rgba(96, 98, 102, 0.5);
-  /* color: rgba(97, 218, 251, 1); */
   color: #000;
 }
