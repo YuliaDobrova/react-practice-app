@@ -5,6 +5,7 @@ import Header from './components/header/Header';
 import BackToTop from './components/backToTop/BackToTop';
 import './App.css';
 import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
 
 function App() {
   // TO TOP BUTTON
@@ -26,6 +27,7 @@ function App() {
         <Main />
         {showButton && <BackToTop />}
       </div>
+      <Footer />
     </>
   );
 }

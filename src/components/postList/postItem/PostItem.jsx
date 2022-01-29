@@ -9,10 +9,10 @@ const PostItem = props => {
   return (
     <div className="post">
       <div className="post__content">
-        <strong>
+        <strong className="post__content">
           {props.post.id}. {props.post.title}
         </strong>
-        <div>{props.post.body}</div>
+        <div className="post__content">{props.post.body}</div>
       </div>
       <div className="posr__btns">
         <MyButton onClick={() => navigate(`/posts/${props.post.id}`)}>

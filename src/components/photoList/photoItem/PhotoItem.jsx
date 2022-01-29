@@ -14,8 +14,6 @@ const PhotoItem = ({ imgUrl, title, text, setModalActive }) => {
           className="photo-list-img"
           src={imgUrl}
           alt={text}
-          width="200"
-          height="150"
         />
         <h4 className="photo-list-item-title">{title}</h4>
         <p className="photo-list-item-text">{text}</p>

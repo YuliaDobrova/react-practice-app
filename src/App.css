@@ -1,6 +1,9 @@
 .AppWrapper {
-  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
-
+@media screen and (min-width: 1200px) {
+  .AppWrapper {
+    width: 900px;
+  }
+}

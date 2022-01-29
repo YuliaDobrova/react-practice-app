@@ -1,0 +1,55 @@
+.Footer {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(139, 152, 178, 0.5);
+}
+.FooterWrapper {
+  display: flex;
+  justify-content: center;
+}
+.FooterText {
+  text-align: center;
+  margin-right: 5px;
+  font-size: 14px;
+  width: 125px;
+}
+.FooterIcon {
+  fill: #ffffff;
+  animation: reactIcon 1500ms infinite alternate;
+}
+@keyframes reactIcon {
+  from {
+    fill: #ffffff;
+  }
+  to {
+    fill: #61dafb;
+  }
+}
+
+.FooterDeveloperText {
+  text-align: center;
+  font-size: 12px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Developer {
+  text-decoration: underline;
+  font-style: italic;
+  color: #ffffff;
+  cursor: pointer;
+}
+.Developer:hover {
+  color: #61dafb;
+}
+
+@media screen and (min-width: 768px) {
+  .FooterText {
+    font-size: 18px;
+    width: 310px;
+  }
+  .FooterDeveloperText {
+    font-size: 14px;
+    width: 310px;
+  }
+}

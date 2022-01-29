@@ -1,5 +1,5 @@
 .post__wrapper {
-  width: 700px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -41,7 +41,9 @@
 .post:focus {
   border: 2px solid rgba(97, 218, 251, 1);
 }
-
+.post__content {
+  font-size: 14px;
+}
 .post-enter {
   opacity: 0;
 }
@@ -73,6 +75,7 @@
 } */
 .posr__btns {
   display: flex;
+  flex-direction: column;
 }
 .PostsNotFound {
   text-align: center;
@@ -97,5 +100,17 @@
   }
   100% {
     color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .post__wrapper {
+    width: 700px;
+  }
+  .posr__btns {
+    flex-direction: row;
+  }
+  .post__content {
+    font-size: 16px;
   }
 }
