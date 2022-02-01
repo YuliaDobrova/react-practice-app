@@ -18,4 +18,12 @@ export default class PostService {
     return response;
     // return response.data;
   }
+
+  static async getCommentsByPostId(id) {
+    const response = await axios.get(
+      `https://jsonplaceholder.typicode.com/posts/${id}/comments`,
+    );
+    // console.log('response.data', response.data);
+    return response;
+  }
 }
