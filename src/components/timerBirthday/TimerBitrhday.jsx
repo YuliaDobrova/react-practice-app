@@ -43,7 +43,13 @@ const TimerBitrhday = () => {
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <p>Soon there will be my BDay party 🥳🎉✨</p>
+      <h3 style={{ letterSpacing: '0.03em', marginBottom: 5 }}>
+        Birthday timer
+      </h3>
+      <p>
+        Soon there will be my BDay party <br />
+        🎉🥳✨
+      </p>
       {timerComponents.length ? timerComponents : <span>Happy Birthday!</span>}
     </div>
   );

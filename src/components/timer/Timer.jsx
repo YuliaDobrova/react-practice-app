@@ -29,6 +29,7 @@ const Timer = () => {
 
   return (
     <div className="timerWrapper">
+      <h3 style={{ letterSpacing: '0.03em' }}>Stopwatch</h3>
       <h1 className="time">{seconds}s</h1>
       <div className="timerBtnWrapper">
         <button

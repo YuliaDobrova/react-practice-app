@@ -17,6 +17,7 @@ const Counter = () => {
 
   return (
     <div className="CounterWrapper">
+      <h3 style={{ letterSpacing: '0.03em' }}>Counter</h3>
       <h1>{count}</h1>
       <div>
         <MyButton className="CounterBtn" onClick={increment}>

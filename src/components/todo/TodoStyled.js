@@ -8,8 +8,8 @@ export const TodoWrapper = styled.div`
     /* transform: translate(-50%, -50%); */
     margin-right: auto;
     margin-left: auto;
-    width: 550px;
-    height: 550px;
+    width: 280px;
+    /* height: 550px; */
     background-color: rgba(139, 152, 178, 0.15);
     border: 1px solid #61dafb;
     border-radius: 20px;
@@ -17,7 +17,9 @@ export const TodoWrapper = styled.div`
     box-shadow: 0px 9px 24px rgba(255, 255, 255, 0.15),
       0px 3px 20px rgba(255, 255, 255, 0.25);
     overflow: hidden;
-
+    @media screen and (min-width: 768px) {
+      width: 550px;
+    }
     &__header {
       /* background-color: rgba(139, 152, 178, 0.5); */
       padding: 20px 30px;
@@ -42,10 +44,12 @@ export const TodoWrapper = styled.div`
         border: 1px solid #61dafb;
         /* border: 0; */
         font-size: 18px;
-        padding: 20px;
+        padding: 10px;
         color: #ffffff;
         flex: 1;
-
+        @media screen and (min-width: 768px) {
+          padding: 20px;
+        }
         &::-webkit-input-placeholder {
           color: #bfbfbf;
         }
@@ -73,10 +77,12 @@ export const TodoWrapper = styled.div`
         justify-content: center;
         border: 0;
         background-color: transparent;
-        width: 65px;
+        width: 40px;
         height: 65px;
         cursor: pointer;
-
+        @media screen and (min-width: 768px) {
+          width: 65px;
+        }
         svg {
           position: relative;
           right: -1px;
