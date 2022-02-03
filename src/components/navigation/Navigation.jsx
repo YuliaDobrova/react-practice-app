@@ -1,13 +1,52 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import headerRoutes from '../../routes/headerRoutes';
+import {
+  headerPrivateRoutes,
+  headerPublicRoutes,
+} from '../../routes/headerRoutes';
+import { AuthContext } from '../context';
+import MyButton from '../shared/button/MyButton';
 import './Navigation.css';
 
 const Navigation = () => {
-  return (
+  const { isAuth, setIsAuth } = useContext(AuthContext);
+
+  const logout = () => {
+    setIsAuth(false);
+  };
+
+  return isAuth ? (
+    <>
+      <ul className="NavLinkList">
+        {headerPrivateRoutes.map(route => (
+          <li className="NavLinkListItem" key={route.path}>
+            <NavLink
+              className={navData =>
+                navData.isActive ? 'NavLink--active' : 'NavLink'
+              }
+              to={route.path}
+            >
+              {route.name}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+      <MyButton
+        style={{
+          width: 100,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginBottom: 10,
+        }}
+        onClick={logout}
+      >
+        Log Out
+      </MyButton>
+    </>
+  ) : (
     <ul className="NavLinkList">
-      {headerRoutes.map(route => (
+      {headerPublicRoutes.map(route => (
         <li className="NavLinkListItem" key={route.path}>
           <NavLink
             className={navData =>
@@ -22,5 +61,4 @@ const Navigation = () => {
     </ul>
   );
 };
-
 export default Navigation;

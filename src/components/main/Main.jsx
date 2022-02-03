@@ -1,28 +1,14 @@
-import React, { Suspense } from 'react';
-import { Routes, Route, Navigate } from 'react-router';
+import React from 'react';
+
 import Container from '../container/Container';
-import Loader from '../shared/loader/Loader';
-import mainRoutes from '../../routes/mainRoutes';
+import AppRouter from '../router/AppRouter';
 import './Main.css';
-import PostsIdPage from '../../pages/PostsIdPage';
 
 const Main = () => {
   return (
     <main className="Main">
       <Container>
-        <Suspense fallback={<Loader />}>
-          <Routes>
-            {mainRoutes.map(route => (
-              <Route
-                path={route.path}
-                element={route.element}
-                key={route.name}
-              />
-            ))}
-            <Route path="/posts/:id" element={<PostsIdPage />} />
-            <Route path="/" element={<Navigate to="/home" />} />
-          </Routes>
-        </Suspense>
+        <AppRouter />
       </Container>
     </main>
   );

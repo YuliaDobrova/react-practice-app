@@ -2,12 +2,19 @@ import HomePage from '../pages/HomePage';
 import PostsPage from '../pages/PostsPage';
 import TodoPage from '../pages/TodoPage';
 import FunctionalPage from '../pages/FunctionalPage';
+import ContactsPage from '../pages/ContactsPage';
+import LoginPage from '../pages/LoginPage';
 
-const mainRoutes = [
+export const privateMainRoutes = [
   {
     name: 'Home',
     path: '/home',
     element: <HomePage />,
+  },
+  {
+    name: 'Functional',
+    path: '/functional',
+    element: <FunctionalPage />,
   },
   {
     name: 'Posts',
@@ -20,10 +27,30 @@ const mainRoutes = [
     element: <TodoPage />,
   },
   {
+    name: 'Contacts',
+    path: '/contacts',
+    element: <ContactsPage />,
+  },
+];
+export const publicMainRoutes = [
+  {
+    name: 'Home',
+    path: '/home',
+    element: <HomePage />,
+  },
+  {
     name: 'Functional',
     path: '/functional',
     element: <FunctionalPage />,
   },
+  {
+    name: 'Posts',
+    path: '/posts',
+    element: <PostsPage />,
+  },
+  {
+    name: 'Login',
+    path: '/login',
+    element: <LoginPage />,
+  },
 ];
-
-export default mainRoutes;

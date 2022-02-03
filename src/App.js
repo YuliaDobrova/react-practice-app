@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
+import { AuthContext } from './components/context';
 import Header from './components/header/Header';
-
 import BackToTop from './components/backToTop/BackToTop';
-import './App.css';
 import Main from './components/main/Main';
 import Footer from './components/footer/Footer';
+import './App.css';
 
 function App() {
+  const [isAuth, setIsAuth] = useState(false);
+
   // TO TOP BUTTON
   const [showButton, setShowButton] = useState(false);
   useEffect(() => {
@@ -22,12 +25,16 @@ function App() {
 
   return (
     <>
-      <Header />
-      <div className="AppWrapper">
-        <Main />
-        {showButton && <BackToTop />}
-      </div>
-      <Footer />
+      <AuthContext.Provider value={{ isAuth, setIsAuth }}>
+        <BrowserRouter>
+          <Header />
+          <div className="AppWrapper">
+            <Main />
+            {showButton && <BackToTop />}
+          </div>
+          <Footer />
+        </BrowserRouter>
+      </AuthContext.Provider>
     </>
   );
 }
