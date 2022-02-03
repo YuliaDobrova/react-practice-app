@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const PIXABAY_API_KEY = process.env.REACT_APP_PIXABAY_API_KEY;
-// console.log('process.env', process.env);
 
 export const getImages = async (query, page = 1) => {
   try {
