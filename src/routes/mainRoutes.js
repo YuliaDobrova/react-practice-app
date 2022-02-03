@@ -8,7 +8,7 @@ import LoginPage from '../pages/LoginPage';
 export const privateMainRoutes = [
   {
     name: 'Home',
-    path: '/home',
+    path: '/',
     element: <HomePage />,
   },
   {
@@ -35,7 +35,7 @@ export const privateMainRoutes = [
 export const publicMainRoutes = [
   {
     name: 'Home',
-    path: '/home',
+    path: '/',
     element: <HomePage />,
   },
   {

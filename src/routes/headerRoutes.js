@@ -1,5 +1,5 @@
 export const headerPrivateRoutes = [
-  { name: 'Home', path: '/home', exact: true },
+  { name: 'Home', path: '/', exact: true },
   { name: 'Functional', path: '/functional', exact: true },
   { name: 'Posts', path: '/posts', exact: true },
   { name: 'Todo', path: '/todo', exact: true },
@@ -7,7 +7,7 @@ export const headerPrivateRoutes = [
 ];
 
 export const headerPublicRoutes = [
-  { name: 'Home', path: '/home', exact: true },
+  { name: 'Home', path: '/', exact: true },
   { name: 'Functional', path: '/functional', exact: true },
   { name: 'Posts', path: '/posts', exact: true },
   // { name: 'Todo', path: '/todo', exact: true },

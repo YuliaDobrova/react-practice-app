@@ -7,7 +7,7 @@ import { AuthContext } from '../context';
 
 const AppRouter = () => {
   const { isAuth } = useContext(AuthContext);
-  console.log('isAuth', isAuth);
+  // console.log('isAuth', isAuth);
   return (
     <>
       <Suspense fallback={<Loader />}>
@@ -21,7 +21,7 @@ const AppRouter = () => {
               />
             ))}
             <Route path="/posts/:id" element={<PostsIdPage />} />
-            <Route path="/login" element={<Navigate to="/home" />} />
+            <Route path="/login" element={<Navigate to="/" />} />
           </Routes>
         ) : (
           <Routes>
