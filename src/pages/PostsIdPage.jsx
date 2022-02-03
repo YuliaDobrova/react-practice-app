@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import PostService from '../API/PostService';
+import PostService from '../api/PostService';
 import Loader from '../components/shared/loader/Loader';
 import useFetching from '../hooks/useFetching';
 

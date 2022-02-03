@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  font-size: 30px;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  background: green;
+}
+
+.grid-inline {
+  display: inline-grid;
+  font-size: 30px;
+  padding: 20px;
+  background: blue;
+}

@@ -10,6 +10,15 @@ import './App.css';
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (localStorage.getItem('auth')) {
+      setIsAuth('true');
+      localStorage.setItem('auth', 'true');
+    }
+    setIsLoading(false);
+  }, []);
 
   // TO TOP BUTTON
   const [showButton, setShowButton] = useState(false);
@@ -25,7 +34,7 @@ function App() {
 
   return (
     <>
-      <AuthContext.Provider value={{ isAuth, setIsAuth }}>
+      <AuthContext.Provider value={{ isAuth, setIsAuth, isLoading }}>
         <BrowserRouter>
           <Header />
           <div className="AppWrapper">

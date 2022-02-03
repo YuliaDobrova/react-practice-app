@@ -9,7 +9,15 @@ const LoginPage = () => {
   const login = event => {
     event.preventDefault();
     setIsAuth(true);
+    localStorage.setItem('auth', 'true');
   };
+
+  // useEffect(() => {
+  //   if (localStorage.getItem('auth')) {
+  //     setIsAuth('true');
+  //     localStorage.setItem('auth', 'true');
+  //   }
+  // }, []);
 
   return (
     <div>

@@ -1,13 +1,17 @@
 import React, { Suspense, useContext } from 'react';
 import { Routes, Route, Navigate } from 'react-router';
-import Loader from '../shared/loader/Loader';
 import { publicMainRoutes, privateMainRoutes } from '../../routes/mainRoutes';
-import PostsIdPage from '../../pages/PostsIdPage';
 import { AuthContext } from '../context';
+import Loader from '../shared/loader/Loader';
+import PostsIdPage from '../../pages/PostsIdPage';
 
 const AppRouter = () => {
-  const { isAuth } = useContext(AuthContext);
+  const { isAuth, isLoading } = useContext(AuthContext);
   // console.log('isAuth', isAuth);
+
+  if (isLoading) {
+    <Loader />;
+  }
   return (
     <>
       <Suspense fallback={<Loader />}>
