@@ -6,6 +6,7 @@ import CommentSlider from '../components/commentSlider/CommentSlider';
 import Timer from '../components/timer/Timer';
 import TimerBitrhday from '../components/timerBirthday/TimerBitrhday';
 import ColorSwitcher from '../components/colorSwitcher/ColorSwitcher';
+import ColorPicker from '../components/colorPicker/ColorPicker';
 
 const FunctionalPage = () => {
   return (
@@ -26,6 +27,8 @@ const FunctionalPage = () => {
       <TimerBitrhday />
       <hr style={{ margin: 15 }} />
       <ColorSwitcher />
+      <hr style={{ margin: 15 }} />
+      <ColorPicker />
     </>
   );
 };

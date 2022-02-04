@@ -70,11 +70,24 @@ class ImageFinder extends Component {
           />
           {this.state.isLoading && <Loader />}
           {!!this.state.images.length && !this.state.isLoading && (
-            <MyButton onClick={this.loadMore}>Load More</MyButton>
+            <MyButton
+              style={{
+                width: 150,
+                marginLeft: 'auto',
+                marginRight: 'auto',
+              }}
+              onClick={this.loadMore}
+            >
+              Load More
+            </MyButton>
           )}
           {this.state.showModal && (
-            <Modal onClose={this.toggleModal}>
-              <img src={this.state.largeImage} alt="Large img" />
+            <Modal active={this.state.showModal} setActive={this.toggleModal}>
+              <img
+                className="largeImg"
+                src={this.state.largeImage}
+                alt="Large img"
+              />
             </Modal>
           )}
         </div>

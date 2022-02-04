@@ -1,3 +1,5 @@
+// =========React=Component====================================
+
 import React, { Component } from 'react';
 import MyButton from '../shared/button/MyButton';
 import MyInput from '../shared/input/MyInput';
@@ -44,3 +46,52 @@ class ImageSearchbar extends Component {
 }
 
 export default ImageSearchbar;
+
+// =============React=HOOKS=======================
+
+// import React, { useState } from 'react';
+// import MyButton from '../shared/button/MyButton';
+// import MyInput from '../shared/input/MyInput';
+// import './ImageSearchBar.css';
+
+// const ImageSearchbar = () => {
+//   const [query, setQuery] = useState('');
+//   // const [page, setPage] = useState(1);
+
+//   const onHandleInputChange = event => {
+//     setQuery(event.currentTarget.value);
+//   };
+
+//   const onInputQuery = async query => {
+//     setQuery(query);
+//   };
+
+//   const onHandleSubmit = event => {
+//     event.preventDefault();
+//     onInputQuery(query);
+//     setQuery('');
+//   };
+
+//   return (
+//     <>
+//       <header className="Searchbar">
+//         <form className="SearchForm" onSubmit={onHandleSubmit}>
+//           <MyInput
+//             className="SearchForm-input"
+//             type="text"
+//             autoComplete="off"
+//             autoFocus
+//             placeholder="Search images and photos"
+//             value={query}
+//             onChange={onHandleInputChange}
+//           />
+//           <MyButton type="submit" className="SearchFormBtn">
+//             <span className="SearchForm-button-label">Search</span>
+//           </MyButton>
+//         </form>
+//       </header>
+//     </>
+//   );
+// };
+
+// export default ImageSearchbar;

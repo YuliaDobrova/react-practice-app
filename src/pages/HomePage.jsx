@@ -20,6 +20,7 @@ const HomePage = () => {
         The best way to practice and improve your React skills is creating an
         application on your own.
       </p>
+      <hr style={{ margin: 15 }} />
       {/* <Grid /> */}
     </div>
   );

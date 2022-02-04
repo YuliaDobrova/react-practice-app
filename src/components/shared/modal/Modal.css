@@ -23,10 +23,18 @@
   background-color: rgb(44, 44, 44);
   transform: scale(0.5);
   transition: 400ms all;
-  width: 50vw;
+  width: 80vw;
 }
 
 .modal-content.active {
   transform: scale(1);
-  width: 50vw;
+  width: 80vw;
+}
+@media screen and (min-width: 768px) {
+  .modal-content {
+    width: 50vw;
+  }
+  .modal-content.active {
+    width: 50vw;
+  }
 }

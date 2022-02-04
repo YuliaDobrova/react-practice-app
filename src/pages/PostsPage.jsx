@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { useMedia } from 'react-use';
+
 import PostService from '../API/PostService';
 import PostFilter from '../components/postFilter/PostFilter';
 import PostForm from '../components/postForm/PostForm';
@@ -7,6 +9,7 @@ import MyButton from '../components/shared/button/MyButton';
 import Loader from '../components/shared/loader/Loader';
 import Modal from '../components/shared/modal/Modal';
 import Pagination from '../components/shared/pagination/Pagination';
+import MySelect from '../components/shared/select/MySelect';
 import useFetching from '../hooks/useFetching';
 import { usePosts } from '../hooks/usePosts';
 import { getPageCount } from '../utils/pages';
@@ -17,8 +20,8 @@ const Posts = () => {
   const [modalFormActive, setModalFormActive] = useState(false);
   const [totalPages, setTotalPages] = useState(0);
   const [page, setPage] = useState(1);
-  // const [limit, setLimit] = useState(10);
-  const limit = 10;
+  const [limit, setLimit] = useState(5);
+  // const limit = 5;
 
   const sortedAndSearchedPosts = usePosts(posts, filter.sort, filter.query);
 
@@ -34,7 +37,7 @@ const Posts = () => {
   useEffect(() => {
     fetchPosts(limit, page);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [page, limit]);
 
   const createPost = newPost => {
     setPosts([...posts, newPost]);
@@ -50,9 +53,37 @@ const Posts = () => {
     fetchPosts(limit, page);
   };
 
+  const isWide = useMedia('(min-width: 768px)');
+
   return (
     <div className="PostWrapper">
+      {isWide && (
+        <>
+          <PostForm create={createPost} />
+          <hr style={{ margin: 15 }} />{' '}
+        </>
+      )}
       <PostFilter filter={filter} setFilter={setFilter} />
+      <MySelect
+        value={limit}
+        onChange={value => setLimit(value)}
+        defaultValue="Number of posts on a page"
+        options={[
+          { value: 5, name: '5' },
+          { value: 10, name: '10' },
+          { value: 20, name: '20' },
+          { value: -1, name: 'Show all' },
+        ]}
+      />
+      <hr style={{ margin: 15 }} />
+      <MyButton
+        style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
+        onClick={() => {
+          setModalFormActive(true);
+        }}
+      >
+        Add New Post
+      </MyButton>
       <hr style={{ margin: 15 }} />
       {postError && <h1>Error:${postError}</h1>}
       {isPostsLoading ? (
@@ -67,16 +98,6 @@ const Posts = () => {
         />
       )}
       <Pagination page={page} changePage={changePage} totalPages={totalPages} />
-      <hr style={{ margin: 15 }} />
-      <MyButton
-        onClick={() => {
-          setModalFormActive(true);
-        }}
-      >
-        Add New Post
-      </MyButton>
-      <hr style={{ margin: 15 }} />
-      <PostForm create={createPost} />
 
       <Modal active={modalFormActive} setActive={setModalFormActive}>
         <PostForm create={createPost} />
