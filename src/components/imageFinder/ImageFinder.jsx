@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { getImages } from '../../services/ImagesService';
 
+import { getImages } from '../../services/ImagesService';
 import Container from '../container/Container';
 import Loader from '../shared/loader/Loader';
 import Modal from '../shared/modal/Modal';

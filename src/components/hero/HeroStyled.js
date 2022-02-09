@@ -68,8 +68,8 @@ export const HeroStyled = styled.div`
       }
     }
     @media screen and (min-width: 768px) {
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
       /* margin-left: -60px;
       margin-right: -60px; */
     }
@@ -101,8 +101,8 @@ export const HeroStyled = styled.div`
     }
 
     @media screen and (min-width: 768px) {
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
     }
   }
 `;

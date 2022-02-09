@@ -31,7 +31,7 @@ class ImageSearchbar extends Component {
               type="text"
               autoComplete="off"
               autoFocus
-              placeholder="Search images and photos"
+              placeholder="Search images"
               value={this.state.query}
               onChange={this.onHandleInputChange}
             />
