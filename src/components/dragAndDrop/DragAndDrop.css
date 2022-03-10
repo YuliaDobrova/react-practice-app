@@ -1,0 +1,32 @@
+.DragAndDropWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DragAndDropCard {
+  width: 60px;
+  height: 90px;
+  border-radius: 10px;
+  border: 5px solid;
+  border-color: rgba(139, 152, 178, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: grab;
+  color: white;
+  font-size: 12px;
+}
+.DragAndDropCard:hover {
+  color: #61dafb;
+}
+
+@media screen and (min-width: 768px) {
+  .DragAndDropCard {
+    width: 150px;
+    height: 200px;
+    margin: 15px;
+    font-size: 20px;
+  }
+}

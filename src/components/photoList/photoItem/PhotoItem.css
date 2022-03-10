@@ -12,6 +12,7 @@
 .photo-list-img {
   width: 120px;
   height: 85px;
+  cursor: pointer;
 }
 
 .photo-list-img:hover {
