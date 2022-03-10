@@ -1,17 +1,23 @@
 import React from 'react';
-import AccordionItem from '../components/accordionItem/AccordionItem';
-import Counter from '../components/counter/Counter';
+import CircleLoader from '../components/circleLoader';
+// import RadioButton from '../components/radioButton/RadioButton';
 import PhotoList from '../components/photoList';
+import AccordionItem from '../components/accordionItem/AccordionItem';
+import DragAndDrop from '../components/dragAndDrop';
 import CommentSlider from '../components/commentSlider/CommentSlider';
+import Counter from '../components/counter/Counter';
 import Timer from '../components/timer/Timer';
 import TimerBitrhday from '../components/timerBirthday/TimerBitrhday';
 import ColorSwitcher from '../components/colorSwitcher/ColorSwitcher';
 import ColorPicker from '../components/colorPicker/ColorPicker';
-import DragAndDrop from '../components/dragAndDrop';
 
 const FunctionalPage = () => {
   return (
     <>
+      <CircleLoader />
+      <hr style={{ margin: 15 }} />
+      {/* <RadioButton />
+      <hr style={{ margin: 15 }} /> */}
       <PhotoList />
       <hr style={{ margin: 15 }} />
       <AccordionItem

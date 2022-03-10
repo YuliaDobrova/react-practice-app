@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { HexColorPicker as Picker } from 'react-colorful';
 
 function ColorPicker() {
-  const [color, setColor] = useState('#218d98');
+  const [color, setColor] = useState('#61dafb');
   return (
     <>
       <h3 style={{ textAlign: 'center' }}>Color Picker</h3>
