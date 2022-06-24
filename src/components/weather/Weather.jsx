@@ -33,11 +33,11 @@ const Weather = () => {
     getWeatherData();
   },[])
 
-  const handleSubmit = (e) =>{
-const inputValue = e.target.value;
-console.log('inputValue', inputValue)
-setDataQuery(inputValue)
-  }
+//   const handleSubmit = (e) =>{
+// const inputValue = e.target.value;
+// console.log('inputValue', inputValue)
+// setDataQuery(inputValue)
+//   }
   
   console.log('weatherData', weatherData);
   return (
