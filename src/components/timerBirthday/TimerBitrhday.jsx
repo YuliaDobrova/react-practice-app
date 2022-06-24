@@ -25,9 +25,11 @@ const TimerBitrhday = () => {
   });
 
   function calculateTimeLeft() {
-    let year = new Date().getFullYear();
+    let year = new Date().getFullYear() + 1;
+    
     // console.log('year', year);
-    const difference = Number(new Date(`02/17/${year}`) - Number(new Date()));
+    // const difference = Number(new Date(`02/17/${year}`) - Number(new Date()));
+    const difference = Number(new Date(`01/01/${year}`) - Number(new Date()));
     // console.log('difference', difference);
     let timeLeft = {};
     if (difference > 0) {
@@ -47,7 +49,8 @@ const TimerBitrhday = () => {
         Birthday timer
       </h3>
       <p>
-        Soon there will be my BDay party <br />
+        {/* Soon there will be my BDay party <br /> */}
+        Time left till the New 2023 Year <br />
         🎉🥳✨
       </p>
       {timerComponents.length ? timerComponents : <span>Happy Birthday!</span>}

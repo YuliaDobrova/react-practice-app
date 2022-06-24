@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/hero/Hero';
+import Weather from '../components/weather/Weather';
 
 // import Grid from '../components/grid/Grid';
 
@@ -25,6 +26,7 @@ const HomePage = () => {
         </p>
         <hr style={{ margin: 15 }} />
         {/* <Grid /> */}
+        <Weather/>
       </div>
     </>
   );
