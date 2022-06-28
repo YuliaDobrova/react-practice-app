@@ -2,8 +2,6 @@ import React from 'react';
 import Hero from '../components/hero/Hero';
 import Weather from '../components/weather/Weather';
 
-// import Grid from '../components/grid/Grid';
-
 const HomePage = () => {
   return (
     <>
@@ -25,8 +23,10 @@ const HomePage = () => {
           application on your own.
         </p>
         <hr style={{ margin: 15 }} />
-        {/* <Grid /> */}
-        <Weather/>
+        <p style={{ textAlign: 'center' , marginBottom: 20}}>
+          <b>Weather widget of my native city</b>
+        </p>
+        <Weather/> 
       </div>
     </>
   );

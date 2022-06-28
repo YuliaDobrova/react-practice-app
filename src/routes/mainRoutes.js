@@ -1,5 +1,6 @@
 import HomePage from '../pages/HomePage';
 import PostsPage from '../pages/PostsPage';
+import ChartsPage from '../pages/ChartsPage';
 import TodoPage from '../pages/TodoPage';
 import FunctionalPage from '../pages/FunctionalPage';
 import ContactsPage from '../pages/ContactsPage';
@@ -16,6 +17,11 @@ export const privateMainRoutes = [
     name: 'Functional',
     path: '/functional',
     element: <FunctionalPage />,
+  },
+  {
+    name: 'Charts',
+    path: '/charts',
+    element: <ChartsPage />,
   },
   {
     name: 'Posts',
@@ -48,6 +54,11 @@ export const publicMainRoutes = [
     name: 'Functional',
     path: '/functional',
     element: <FunctionalPage />,
+  },
+  {
+    name: 'Charts',
+    path: '/charts',
+    element: <ChartsPage />,
   },
   {
     name: 'Posts',
