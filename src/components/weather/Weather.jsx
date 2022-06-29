@@ -5,8 +5,8 @@ import Loader from '../shared/loader/Loader';
 import './Weather.css';
 
 const defaultWeather = {
-  name: 'Kiev',
-  weather: [{ main: 'clouds', icon: '04d' }],
+  name: 'Kyiv',
+  weather: [{ main: 'Clouds', icon: '04d' }],
   main: { temp: 19.0, feels_like: 17.0 },
 };
 

@@ -3,6 +3,7 @@ import BarChart from './BarChart';
 import LineChart from './LineChart';
 import PieChart from './PieChart';
 import { UserData } from './data/DataChart';
+import DoughnutChart from './DoughnutChart';
 
 const Charts = () => {
   const [userDataGain, setUserDataGain] = useState({
@@ -93,6 +94,18 @@ const Charts = () => {
       <div style={{ width: 450 }}>
         <PieChart chartData={userDataLost} />
       </div>
+    </div>
+    <hr style={{ margin: 35 }} />
+    <div
+      style={{
+        width: 600,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: 20,
+        // display: 'flex',
+      }}
+    >
+    <DoughnutChart/>
     </div>
     </>
   );
