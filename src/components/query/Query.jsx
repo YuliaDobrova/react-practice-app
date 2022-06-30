@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Container, Typography, Pagination, TextField, Stack, Link } from '@mui/material';
-const BASE_URL = 'http://hn.algolia.com/api/v1/search?';
+const BASE_URL = 'https://hn.algolia.com/api/v1/search?';
 
 const Query = () => {
   const [posts, setPosts] = useState([]);
