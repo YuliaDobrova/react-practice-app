@@ -46,7 +46,7 @@ const TimerBitrhday = () => {
   return (
     <div style={{ textAlign: 'center' }}>
       <h3 style={{ letterSpacing: '0.03em', marginBottom: 5 }}>
-        Birthday timer
+        New Year's Timer
       </h3>
       <p>
         {/* Soon there will be my BDay party <br /> */}

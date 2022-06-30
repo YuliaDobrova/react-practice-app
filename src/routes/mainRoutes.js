@@ -1,5 +1,6 @@
 import HomePage from '../pages/HomePage';
 import PostsPage from '../pages/PostsPage';
+import QueryPage from '../pages/QueryPage';
 import ChartsPage from '../pages/ChartsPage';
 import TodoPage from '../pages/TodoPage';
 import FunctionalPage from '../pages/FunctionalPage';
@@ -27,6 +28,11 @@ export const privateMainRoutes = [
     name: 'Posts',
     path: '/posts',
     element: <PostsPage />,
+  },
+  {
+    name: 'Query',
+    path: '/query',
+    element: <QueryPage />,
   },
   {
     name: 'Images',
@@ -64,6 +70,11 @@ export const publicMainRoutes = [
     name: 'Posts',
     path: '/posts',
     element: <PostsPage />,
+  },
+  {
+    name: 'Query',
+    path: '/query',
+    element: <QueryPage />,
   },
   {
     name: 'Images',
