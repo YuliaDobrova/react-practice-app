@@ -1,0 +1,22 @@
+.area {
+  padding: 50px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.ref-button {
+  display: block;
+  width: 200px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border-color: white;
+  border: 2px dotted #423842;
+}
+.ref-button:hover {
+  background: #43cea2;
+}

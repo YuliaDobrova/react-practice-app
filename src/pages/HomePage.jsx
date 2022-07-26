@@ -21,6 +21,7 @@ const HomePage = () => {
           application on your own.
         </p>
         <hr style={{ margin: 15 }} />
+
         <p style={{ textAlign: 'center', marginBottom: 20 }}>
           <b>Weather widget of my native city</b>
         </p>
