@@ -1,6 +1,8 @@
+
 import React from 'react';
 import EarthAnimation from '../components/earthAnimation/EarthAnimation';
 import Hero from '../components/hero/Hero';
+import Title from '../components/title/Title';
 import Weather from '../components/weather/Weather';
 
 const HomePage = () => {
@@ -8,7 +10,8 @@ const HomePage = () => {
     <>
       <Hero />
       <div>
-        <h1 style={{ textAlign: 'center' }}> React</h1>
+        <Title/>
+        {/* <h1 style={{ textAlign: 'center' }}> React</h1> */}
         <p style={{ textAlign: 'center' }}>
           A JavaScript library for building user interfaces.
         </p>

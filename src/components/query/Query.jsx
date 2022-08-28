@@ -1,9 +1,28 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
+import { makeStyles } from "@material-ui/core";
 import { Container, Typography, Pagination, TextField, Stack, Link } from '@mui/material';
+import "./Query.css"
 const BASE_URL = 'https://hn.algolia.com/api/v1/search?';
 
+const useStyles = makeStyles(() => ({
+  textField: {
+    width: "90%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    paddingBottom: 0,
+    marginTop: 0,
+    fontWeight: 500,
+    backgroundColor:  "rgba(170, 170, 170, 0.2)",
+    borderRadius: 4
+  },
+  input: {
+    color: "#ffffff"
+  }
+}));
+
 const Query = () => {
+  const classes = useStyles();
   const [posts, setPosts] = useState([]);
   const [query, setQuery] = useState('react');
   const [page, setPage] = useState(1);
@@ -21,20 +40,31 @@ const Query = () => {
   }, [query, page]);
 
   return (
-    <Container sx={{ marginTop: 5 }} maxWidth="md">
-      <Typography style={{marginBottom:15, fontSize: 18}}>Search interesting articles about IT</Typography>
-      <TextField
+    <Container 
+    sx={{ marginTop: 5 }} 
+    maxWidth="md">
+      <div className='query-container'>
+      <Typography 
+      className='query-typography'
+      style={{marginBottom:15, fontSize: 18, color: '#61dafb' }}
+      >
+        Search interesting articles about IT</Typography>
+      <div sx={{ backgroundColor: 'rgba(170, 170, 170, 0.2)', color: '#61dafb' }}>
+        <TextField
+         className={classes.textField}
         fullWidth
         label="query"
         value={query}
         onChange={event => {
           setQuery(event.target.value);
         }}
-        sx={{ backgroundColor: 'rgba(170, 170, 170, 0.2)' }}
+        sx={{  color: '#61dafb' }}
       />
+        </div>
       <Stack spacing={2}>
         {!!pageQuantity && (
           <Pagination
+          className={classes.pagination}
             count={pageQuantity}
             page={page}
             onChange={(_, num) => setPage(num)}
@@ -47,10 +77,15 @@ const Query = () => {
         )}
         {posts.map(post => (
           <Link key={post.objectID} href={post.url}>
-            {post.title || post.story_title}
+            <div
+                  style={{ fontSize: 18, color: '#61dafb' }}
+            >
+              {post.title || post.story_title}
+              </div>
           </Link>
         ))}
       </Stack>
+      </div>
     </Container>
   );
 };
