@@ -18,7 +18,11 @@ const Todo = () => {
       completed: true,
     },
     {
-      text: 'Get a job as a FrontEnd-developer',
+      text: 'Work for a yaer as Frontend Developer',
+      completed: true,
+    },
+    {
+      text: 'Get a new job offer & find a friendly team',
       completed: false,
     },
   ]);

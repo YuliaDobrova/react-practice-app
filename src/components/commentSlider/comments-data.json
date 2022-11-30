@@ -1,14 +1,22 @@
 [
   {
-    "name": "Author 1",
-    "text": "Dolore placeat quibusdam ea quo vitae magni quis enim qui quis quo nemo aut saepe quidem repellat excepturi ut quia sunt ut sequi eos ea sed quas"
+    "name": "Brian Kernighan",
+    "text": "Don't comment bad code - rewrite it."
   },
   {
-    "name": "Author 2",
-    "text": "Dignissimos aperiam dolorem qui eum facilis quibusdam animi sint suscipit qui sint possimus cum quaerat magni maiores excepturi ipsam ut commodi dolor voluptatum modi aut vitae"
+    "name": "Rick Osborne",
+    "text": "Always code as if the guy who ends up maintaning your code will be a violent psychopath who knows where you live."
   },
   {
-    "name": "Author 3",
-    "text": "Quo et expedita modi cum officia vel magni doloribus qui repudiandae vero nisi sit quos veniam quod sed accusamus veritatis error"
+    "name": "Bill Gates",
+    "text": "The computer was born to solve problems that did not exist before."
+  },
+  {
+    "name": "Steve Jobs",
+    "text": "Everybody in this country should learn to program a computer because it teaches you how to think."
+  },
+  {
+    "name": "Paul Graham",
+    "text": "Dont't worry if it doesn't work right. If everything did, you'd be out of a job."
   }
 ]

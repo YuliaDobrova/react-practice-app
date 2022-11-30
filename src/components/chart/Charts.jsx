@@ -44,6 +44,20 @@ const Charts = () => {
   });
 
   return (<>
+        <p style={{fontStyle:"italic", textAlign:"center", marginBottom: 15}}>Try to <b>cross the color</b> in the chart & watch the result!</p>
+
+    <div
+      style={{
+        width: 600,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: 20,
+        // display: 'flex',
+      }}
+    >
+    <DoughnutChart/>
+    </div>
+      <hr style={{ margin: 35 }} />
     <div
       style={{
         width: 920,
@@ -95,18 +109,7 @@ const Charts = () => {
         <PieChart chartData={userDataLost} />
       </div>
     </div>
-    <hr style={{ margin: 35 }} />
-    <div
-      style={{
-        width: 600,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginBottom: 20,
-        // display: 'flex',
-      }}
-    >
-    <DoughnutChart/>
-    </div>
+    
     </>
   );
 };

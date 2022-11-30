@@ -50,9 +50,10 @@ const DragAndDrop = () => {
     }
   };
 
-  return (
+  return (<>
+      <p style={{fontStyle:"italic", textAlign:"center", marginBottom:15}}>Try to <b>drag</b> a card and <b>drop</b> it on the other random card!</p>
     <div className="DragAndDropWrapper">
-      {cardList.sort(sortCards).map(card => (
+      {cardList.sort(sortCards).map((card, index) => (
         <div
           className="DragAndDropCard"
           draggable={true}
@@ -61,11 +62,13 @@ const DragAndDrop = () => {
           onDragEnd={e => dragEndHandler(e)}
           onDragOver={e => dragOverHandler(e)}
           onDrop={e => dropHandler(e, card)}
+          key={index}
         >
           {card.text}
         </div>
       ))}
     </div>
+    </>
   );
 };
 

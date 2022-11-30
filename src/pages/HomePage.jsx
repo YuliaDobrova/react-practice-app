@@ -1,7 +1,7 @@
-
 import React from 'react';
 import EarthAnimation from '../components/earthAnimation/EarthAnimation';
 import Hero from '../components/hero/Hero';
+import MyButton from '../components/shared/button/MyButton';
 import Title from '../components/title/Title';
 import Weather from '../components/weather/Weather';
 
@@ -9,9 +9,8 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <div>
-        <Title/>
-        {/* <h1 style={{ textAlign: 'center' }}> React</h1> */}
+      <div style={{ paddingBottom: 70 }}>
+        <Title />
         <p style={{ textAlign: 'center' }}>
           A JavaScript library for building user interfaces.
         </p>
@@ -24,11 +23,20 @@ const HomePage = () => {
           application on your own.
         </p>
         <hr style={{ margin: 15 }} />
-
-        <p style={{ textAlign: 'center', marginBottom: 20 }}>
-          <b>Weather widget of my native city</b>
-        </p>
-        <Weather />
+        <div style={{ display:"flex", justifyContent:"center" }}>
+          <MyButton>
+            <p style={{ textAlign: 'center' }}>
+              <a
+                href="https://yuliadobrova.github.io/my-resume/"
+                target="_blank"
+                style={{ color: '#61dafb' }}
+              >
+                → <b>Check out my CV</b>
+              </a>
+            </p>
+          </MyButton>
+        </div>
+        <hr style={{ margin: 15 }} />
         <EarthAnimation />
       </div>
     </>

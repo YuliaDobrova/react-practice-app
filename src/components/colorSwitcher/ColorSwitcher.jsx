@@ -32,7 +32,8 @@ const ColorSwitcher = () => {
     colorSwitchWrap.style.backgroundColor = 'transparent';
   }
 
-  return (
+  return (<>
+        <h3 style={{textAlign:"center", marginBottom:15}}>Background Color Switcher</h3>
     <div className="colorSwitcherWrapper" id="colorSwitcherWrapper">
       <MyButton
         id="colorSwitcherStartBtn"
@@ -52,6 +53,8 @@ const ColorSwitcher = () => {
         Clear
       </MyButton>
     </div>
+  </>
+
   );
 };
 

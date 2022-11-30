@@ -62,9 +62,9 @@ export const publicMainRoutes = [
     element: <FunctionalPage />,
   },
   {
-    name: 'Charts',
-    path: '/charts',
-    element: <ChartsPage />,
+    name: 'Images',
+    path: '/images',
+    element: <ImagesPage />,
   },
   {
     name: 'Posts',
@@ -72,14 +72,14 @@ export const publicMainRoutes = [
     element: <PostsPage />,
   },
   {
+    name: 'Charts',
+    path: '/charts',
+    element: <ChartsPage />,
+  },
+  {
     name: 'Query',
     path: '/query',
     element: <QueryPage />,
-  },
-  {
-    name: 'Images',
-    path: '/images',
-    element: <ImagesPage />,
   },
   {
     name: 'Login',

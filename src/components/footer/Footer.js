@@ -17,12 +17,12 @@ const Footer = () => {
         <p className="FooterDeveloperText">
           Designed and developed by{' '}
           <a
-            href="https://www.linkedin.com/in/yulia-dobrova-37a335217/"
+            href="https://www.linkedin.com/in/yuliia-dobrova-37a335217/"
             target="_blank"
             rel="noreferrer"
             className="Developer"
           >
-            Yulia Dobrova
+            Yuliia Dobrova
           </a>
         </p>
       </Container>

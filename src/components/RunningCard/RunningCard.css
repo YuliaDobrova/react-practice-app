@@ -16,10 +16,11 @@
   /* transform: translate(-50%, -50%); */
 }
 
-.card h2 {
+.card h3 {
   z-index: 1;
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
+  padding: 10px;
 }
 
 .card::before {

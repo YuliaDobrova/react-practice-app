@@ -32,16 +32,16 @@ const DoughnutChart = () => {
   },[])
   return (
     <div>
-      <MyButton
-        type="button"
-        onClick={downloadImage}
-        style={{ marginLeft: 'auto', marginRight: 'auto', marginBottom: 30, display: 'block' }}
-      >
-        Download Custom Chart-Image
-      </MyButton>
       <div style={{height:"600px", width:"600px", margin:"0 auto"}}>
         <Doughnut ref={ref} data={data} />
       </div>
+      <MyButton
+        type="button"
+        onClick={downloadImage}
+        style={{ marginLeft: 'auto', marginRight: 'auto',marginTop: 20, marginBottom: 15, display: 'block' }}
+      >
+        Download Your Custom Chart-Image!
+      </MyButton>
     </div>
   );
 };
