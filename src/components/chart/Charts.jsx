@@ -4,6 +4,7 @@ import LineChart from './LineChart';
 import PieChart from './PieChart';
 import { UserData } from './data/DataChart';
 import DoughnutChart from './DoughnutChart';
+import './Charts.css';
 
 const Charts = () => {
   const [userDataGain, setUserDataGain] = useState({
@@ -43,73 +44,49 @@ const Charts = () => {
     ],
   });
 
-  return (<>
-        <p style={{fontStyle:"italic", textAlign:"center", marginBottom: 15}}>Try to <b>cross the color</b> in the chart & watch the result!</p>
+  return (
+    <>
+      <p style={{ fontStyle: 'italic', textAlign: 'center', marginBottom: 15 }}>
+        Try to <b>cross the color</b> in the chart & watch the result!
+      </p>
 
-    <div
-      style={{
-        width: 600,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginBottom: 20,
-        // display: 'flex',
-      }}
-    >
-    <DoughnutChart/>
-    </div>
+      <div className="DoughnutChartWrapper">
+        <DoughnutChart />
+      </div>
       <hr style={{ margin: 35 }} />
-    <div
-      style={{
-        width: 920,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginBottom: 10,
-        display: 'flex',
+      <div
+      className='ChartThumb'
         
-      }}
-    >
-      <div style={{ width: 450 }}>
-        <BarChart chartData={userDataGain} />
+      >
+        <div className="ChartWrapper">
+          <BarChart chartData={userDataGain} />
+        </div>
+        <div className="ChartWrapper">
+          <BarChart chartData={userDataLost} />
+        </div>
       </div>
-      <div style={{ width: 450 }}>
-        <BarChart chartData={userDataLost} />
+      <hr style={{ margin: 35 }} />
+      <div
+   className='ChartThumb'
+      >
+        <div className="ChartWrapper">
+          <LineChart chartData={userDataGain} />
+        </div>
+        <div className="ChartWrapper">
+          <LineChart chartData={userDataLost} />
+        </div>
       </div>
-    </div>
-    <hr style={{ margin: 35 }} />
-    <div
-      style={{
-        width:920,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginBottom: 10,
-        display: 'flex',
-      }}
-    >
-      <div style={{ width: 450 }}>
-        <LineChart chartData={userDataGain} />
+      <hr style={{ margin: 35 }} />
+      <div
+   className='ChartThumb'
+      >
+        <div className="ChartWrapper">
+          <PieChart chartData={userDataGain} />
+        </div>
+        <div className="ChartWrapper">
+          <PieChart chartData={userDataLost} />
+        </div>
       </div>
-      <div style={{ width: 450 }}>
-        <LineChart chartData={userDataLost} />
-      </div>
-    </div>
-    <hr style={{ margin: 35 }} />
-    <div
-      style={{
-        width: 920,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginBottom: 10,
-        display: 'flex',
-      }}
-    >
-      <div style={{ width: 450 }}>
-        <PieChart chartData={userDataGain} />
-      </div>
-      <div style={{ width: 450 }}>
-        <PieChart chartData={userDataLost} />
-      </div>
-    </div>
-    
     </>
   );
 };
