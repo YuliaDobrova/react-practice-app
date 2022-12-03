@@ -6,6 +6,7 @@ import './RunningCard.css';
 
 const RunningCard = () => {
   const phrases = [
+    'Yes, sure!',
     'That sounds good',
     'Yeah, it definitely needs to be done',
     "I don't think it's a good idea",
@@ -20,7 +21,7 @@ const RunningCard = () => {
   const [phrase, setPhrase] = useState("");
 
   function getRandomAnswer() {
-    const randomAnswer = phrases[Math.floor(Math.random() * 10)];
+    const randomAnswer = phrases[Math.floor(Math.random() * 11)];
     setPhrase(randomAnswer);
   }
 

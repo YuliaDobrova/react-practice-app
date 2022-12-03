@@ -47,7 +47,7 @@ const Charts = () => {
   return (
     <>
       <p style={{ fontStyle: 'italic', textAlign: 'center', marginBottom: 15 }}>
-        Try to <b>cross the color</b> in the chart & watch the result!
+        Try to <b>cross the name of the color</b> in the chart & watch the result!
       </p>
 
       <div className="DoughnutChartWrapper">
