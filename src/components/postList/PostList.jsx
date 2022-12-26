@@ -19,6 +19,7 @@ const PostList = ({ posts, title, remove }) => {
           href="https://jsonplaceholder.typicode.com/posts"
           target="_blank"
           rel="noreferrer"
+          title='https://jsonplaceholder is used to fetch fake data'
         >
           jsonplaceholder.typicode.com
         </a>

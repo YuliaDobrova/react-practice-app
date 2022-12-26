@@ -13,6 +13,7 @@ import ColorPicker from '../components/colorPicker/ColorPicker';
 import TippyComponent from '../components/tippy/Tippy';
 import RunningCard from '../components/RunningCard/RunningCard';
 import Weather from '../components/weather/Weather';
+import RandomNumber from '../components/randomNumber/RandomNumber';
 
 const FunctionalPage = () => {
   return (
@@ -21,10 +22,10 @@ const FunctionalPage = () => {
       <hr style={{ margin: 15 }} />
       {/* <RadioButton />
       <hr style={{ margin: 15 }} /> */}
-              <p style={{ textAlign: 'center', marginBottom: 20 }}>
-          <b>Weather widget of my native city</b>
-        </p>
-        <Weather />
+      <p style={{ textAlign: 'center', marginBottom: 20 }}>
+        <b>Weather widget of my native city</b>
+      </p>
+      <Weather />
       <hr style={{ margin: 15 }} />
       <PhotoList />
       <hr style={{ margin: 15 }} />
@@ -41,9 +42,11 @@ const FunctionalPage = () => {
       <hr style={{ margin: 15 }} />
       <RunningCard />
       <hr style={{ marginLeft: 15, marginRight: 15, marginTop: 50 }} />
+      <Counter />
+      <hr style={{ margin: 15 }} />
       <Timer />
       <hr style={{ margin: 15 }} />
-      <Counter />
+      <RandomNumber />
       <hr style={{ margin: 15 }} />
       <TimerBitrhday />
       <hr style={{ margin: 15 }} />
