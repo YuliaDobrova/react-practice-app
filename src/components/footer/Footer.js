@@ -3,6 +3,7 @@ import React from 'react';
 import Container from '../container/Container';
 import sprite from '../../images/sprite.svg';
 import './Footer.css';
+import SocialIcons from '../socialIcons/SocialIcons';
 
 const Footer = () => {
   return (
@@ -16,15 +17,18 @@ const Footer = () => {
         </div>
         <p className="FooterDeveloperText">
           Designed and developed by{' '}
-          <a
+          {/* <a
             href="https://www.linkedin.com/in/yuliia-dobrova-37a335217/"
             target="_blank"
             rel="noreferrer"
             className="Developer"
-          >
-            Yuliia Dobrova
-          </a>
+          > */}
+          <b>
+            <i>Yuliia Dobrova</i>
+          </b>
+          {/* </a> */}
         </p>
+        <SocialIcons />
       </Container>
     </footer>
   );

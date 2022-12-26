@@ -55,11 +55,10 @@ const HomePage = () => {
               alt="Yulia's photo"
               width="100"
               height="100"
-              style={{ borderRadius: '20%', cursor: "pointer"}}
+              style={{ borderRadius: '20%', cursor: 'pointer' }}
               onClick={() => {
                 setModalPhotoActive(true);
               }}
-            
             />
           </div>
         </div>
