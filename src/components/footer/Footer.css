@@ -11,7 +11,7 @@
   text-align: center;
   margin-right: 5px;
   font-size: 14px;
-  width: 125px;
+  width: 150px;
 }
 .FooterIcon {
   fill: #ffffff;
@@ -50,6 +50,6 @@
   }
   .FooterDeveloperText {
     font-size: 14px;
-    width: 310px;
+    width: 315px;
   }
 }

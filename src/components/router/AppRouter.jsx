@@ -25,7 +25,7 @@ const AppRouter = () => {
               />
             ))}
             <Route path="/posts/:id" element={<PostsIdPage />} />
-            <Route path="/login" element={<Navigate to="/" />} />
+            {/* <Route path="/login" element={<Navigate to="/" />} /> */}
           </Routes>
         ) : (
           <Routes>
@@ -37,8 +37,8 @@ const AppRouter = () => {
               />
             ))}
             <Route path="/posts/:id" element={<PostsIdPage />} />
-            <Route path="/contacts" element={<Navigate to="/login" />} />
-            <Route path="/todo" element={<Navigate to="/login" />} />
+            {/* <Route path="/contacts" element={<Navigate to="/login" />} /> */}
+            {/* <Route path="/todo" element={<Navigate to="/login" />} /> */}
           </Routes>
         )}
       </Suspense>

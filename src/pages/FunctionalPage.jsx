@@ -14,6 +14,7 @@ import TippyComponent from '../components/tippy/Tippy';
 import RunningCard from '../components/RunningCard/RunningCard';
 import Weather from '../components/weather/Weather';
 import RandomNumber from '../components/randomNumber/RandomNumber';
+import RatingCounter from '../components/ratingCounter/RatingCounter';
 
 const FunctionalPage = () => {
   return (
@@ -43,6 +44,8 @@ const FunctionalPage = () => {
       <RunningCard />
       <hr style={{ marginLeft: 15, marginRight: 15, marginTop: 50 }} />
       <Counter />
+      <hr style={{ margin: 15 }} />
+      <RatingCounter />
       <hr style={{ margin: 15 }} />
       <Timer />
       <hr style={{ margin: 15 }} />

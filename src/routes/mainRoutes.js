@@ -68,6 +68,11 @@ export const publicMainRoutes = [
     element: <FunctionalPage />,
   },
   {
+    name: 'Todo',
+    path: '/todo',
+    element: <TodoPage />,
+  },
+  {
     name: 'Images',
     path: '/images',
     element: <ImagesPage />,
@@ -87,14 +92,15 @@ export const publicMainRoutes = [
     path: '/query',
     element: <QueryPage />,
   },
+
   // {
   //   name: 'Board',
   //   path: '/board',
   //   element: <BoardPage />,
   // },
-  {
-    name: 'Login',
-    path: '/login',
-    element: <LoginPage />,
-  },
+  // {
+  //   name: 'Login',
+  //   path: '/login',
+  //   element: <LoginPage />,
+  // },
 ];
