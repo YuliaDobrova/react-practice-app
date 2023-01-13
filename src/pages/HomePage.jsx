@@ -5,6 +5,7 @@ import MyButton from '../components/shared/button/MyButton';
 import Title from '../components/title/Title';
 import photo from '../images/Yulia.png';
 import Modal from '../components/shared/modal/Modal';
+import ShiningBtn from '../components/shiningBtn/ShiningBtn';
 
 const HomePage = () => {
   const [modalPhotoActive, setModalPhotoActive] = useState(false);
@@ -27,27 +28,11 @@ const HomePage = () => {
         </p>
         <hr style={{ margin: 15 }} />
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <MyButton>
-            <p style={{ textAlign: 'center' }}>
-              <a
-                href="https://yuliadobrova.github.io/my-resume/"
-                target="_blank"
-                style={{ color: '#61dafb' }}
-              >
-                → <b>Check out my CV</b>
-              </a>
-            </p>
-          </MyButton>
+          <ShiningBtn />
           <div
             style={{
-              // display: 'flex',
-              // flexDirection: 'row',
-              // justifyContent: 'center',
-              // width: 70,
               height: 80,
               marginLeft: 10,
-              // borderRadius: '15%',
-              // background: 'rgba(139, 152, 178, 0.5)',
             }}
           >
             <img
