@@ -21,7 +21,7 @@ const RatingCounter = () => {
       </div>
 
       <div className="rating-stars-container">
-        <div class="rating-stars">
+        <div className="rating-stars">
           <input
             className="rating-stars-input"
             type="radio"
@@ -29,43 +29,43 @@ const RatingCounter = () => {
             id="rs0"
             checked
           />
-          <label className="rating-stars-label" for="rs0"></label>
+          <label className="rating-stars-label" htmlFor="rs0"></label>
           <input
             className="rating-stars-input"
             type="radio"
             name="rating"
             id="rs1"
           />
-          <label className="rating-stars-label" for="rs1"></label>
+          <label className="rating-stars-label" htmlFor="rs1"></label>
           <input
             className="rating-stars-input"
             type="radio"
             name="rating"
             id="rs2"
           />
-          <label className="rating-stars-label" for="rs2"></label>
+          <label className="rating-stars-label" htmlFor="rs2"></label>
           <input
             className="rating-stars-input"
             type="radio"
             name="rating"
             id="rs3"
           />
-          <label className="rating-stars-label" for="rs3"></label>
+          <label className="rating-stars-label" htmlFor="rs3"></label>
           <input
             className="rating-stars-input"
             type="radio"
             name="rating"
             id="rs4"
           />
-          <label className="rating-stars-label" for="rs4"></label>
+          <label className="rating-stars-label" htmlFor="rs4"></label>
           <input
             className="rating-stars-input"
             type="radio"
             name="rating"
             id="rs5"
           />
-          <label className="rating-stars-label" for="rs5"></label>
-          <span class="rating-counter"></span>
+          <label className="rating-stars-label" htmlFor="rs5"></label>
+          <span className="rating-counter"></span>
         </div>
       </div>
     </>

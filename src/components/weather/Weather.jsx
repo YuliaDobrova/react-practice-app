@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getWeatherForecast } from '../../services/WeatherService';
+import DateComponent from '../date/DateComponent';
+
 import Loader from '../shared/loader/Loader';
 // import { useEffect } from 'react/cjs/react.production.min';
 import './Weather.css';
@@ -59,12 +61,13 @@ const Weather = () => {
   // setDataQuery(inputValue)
   //   }
 
-  // console.log('weatherData', weatherData);
+  console.log('weatherData', weatherData);
   return (
     <>
       {isloading && <Loader />}
       {/* <input onSubmit={handleSubmit}/> */}
       <div id="weather" className="weather">
+        <DateComponent />
         <div className="weather__header">
           <div className="weather__main">
             <div className="weather__city-name">{weatherData.name}</div>
@@ -83,7 +86,19 @@ const Weather = () => {
           </div>
         </div>
         <div className="weathe r__feels-like">
-          Feels like: {weatherData.main.feels_like} °C
+          Feels like: {weatherData?.main.feels_like} °C
+        </div>
+        <div className="weathe r__feels-like">
+          Humidity: {weatherData?.main?.humidity} %
+        </div>
+        <div className="weathe r__feels-like">
+          Wind speed: {weatherData?.wind?.speed} m/s
+        </div>
+        <div className="weathe r__feels-like">
+          Max temp: {weatherData?.main.temp_max} °C
+        </div>
+        <div className="weathe r__feels-like">
+          Min temp: {weatherData?.main.temp_min} °C
         </div>
       </div>
     </>

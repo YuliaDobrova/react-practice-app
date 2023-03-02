@@ -26,6 +26,7 @@ const FunctionalPage = () => {
       <p style={{ textAlign: 'center', marginBottom: 20 }}>
         <b>Weather widget of my native city</b>
       </p>
+
       <Weather />
       <hr style={{ margin: 15 }} />
       <PhotoList />
