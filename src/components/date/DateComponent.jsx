@@ -29,9 +29,20 @@ const DateComponent = () => {
   };
 
   return (
-    <div>
-      <p className="date">Date: {newdate}</p>
-      <p className="time">Time: {time}</p>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <div className="date">
+        Today is <span style={{ color: '#61dafb' }}>{newdate}</span>.{' '}
+      </div>
+      <div className="time">
+        Local time in Vancouver, BC is{' '}
+        <span style={{ color: '#61dafb' }}>{time}</span>
+      </div>
     </div>
   );
 };

@@ -67,7 +67,7 @@
   width: 90%;
   height: 90%;
   content: '';
-  background: aqua;
+  background: #61dafb;
   z-index: -1;
   display: block;
   margin-left: 5%;
@@ -132,7 +132,7 @@
 }
 
 .rating-stars-label + .rating-stars-input:checked ~ .rating-counter:before {
-  color: aqua !important;
+  color: #61dafb !important;
   transition: all 0.25s ease 0s;
 }
 
@@ -170,5 +170,5 @@
 
 .rating-stars-input:checked:hover ~ .rating-counter:before {
   animation: none !important;
-  color: aqua !important ;
+  color: #61dafb !important ;
 }

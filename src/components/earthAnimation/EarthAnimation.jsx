@@ -4,11 +4,11 @@ import './EarthAnimation.css';
 const EarthAnimation = () => {
   return (
     <>
-      <div class="wrapper">
-        <div class="ball"></div>
+      <div className="wrapper">
+        <div className="ball"></div>
       </div>
 
-      <div class="table"></div>
+      <div className="table"></div>
     </>
   );
 };

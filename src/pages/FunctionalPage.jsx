@@ -15,25 +15,25 @@ import RunningCard from '../components/RunningCard/RunningCard';
 import Weather from '../components/weather/Weather';
 import RandomNumber from '../components/randomNumber/RandomNumber';
 import RatingCounter from '../components/ratingCounter/RatingCounter';
+import DateComponent from '../components/date/DateComponent';
 
 const FunctionalPage = () => {
   return (
     <>
       <CircleLoader />
       <hr style={{ margin: 15 }} />
-      {/* <RadioButton />
-      <hr style={{ margin: 15 }} /> */}
+      <DateComponent />
+      <hr style={{ margin: 15 }} />
       <p style={{ textAlign: 'center', marginBottom: 20 }}>
-        <b>Weather widget of my native city</b>
+        <b>Weather widget</b>
       </p>
-
       <Weather />
       <hr style={{ margin: 15 }} />
       <PhotoList />
       <hr style={{ margin: 15 }} />
       <AccordionItem
         title="Click the accordion below to expand/collapse the accordion content. "
-        description="This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions."
+        description="Here could be a secret message... 😄"
       />
       <hr style={{ margin: 15 }} />
       <TippyComponent />

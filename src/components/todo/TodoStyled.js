@@ -2,14 +2,9 @@ import styled from 'styled-components';
 
 export const TodoWrapper = styled.div`
   .todo {
-    /* position: absolute; */
-    /* left: 50%; */
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
     margin-right: auto;
     margin-left: auto;
     width: 280px;
-    /* height: 550px; */
     background-color: rgba(139, 152, 178, 0.15);
     border: 1px solid #61dafb;
     border-radius: 20px;
@@ -108,6 +103,10 @@ export const TodoWrapper = styled.div`
 
         &--completed {
           text-decoration: line-through;
+          svg {
+            display: block;
+          }
+
           #{$self}-check {
             svg {
               display: block;

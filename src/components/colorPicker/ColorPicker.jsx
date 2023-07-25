@@ -20,6 +20,7 @@ function ColorPicker() {
           style={{
             background: color,
             borderRadius: 10,
+            marginBottom: 10,
           }}
         >
           <Picker

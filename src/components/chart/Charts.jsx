@@ -47,17 +47,30 @@ const Charts = () => {
   return (
     <>
       <p style={{ fontStyle: 'italic', textAlign: 'center', marginBottom: 15 }}>
-        Try to <b>cross the name of the color</b> in the chart & watch the result!
+        Try to cross{' '}
+        <span style={{ fontWeight: 700, color: '#61dafb' }}>
+          the name of the color
+        </span>{' '}
+        or a<span style={{ fontWeight: 700, color: '#61dafb' }}> year</span> in
+        the charts & watch the result!
       </p>
 
       <div className="DoughnutChartWrapper">
         <DoughnutChart />
       </div>
+
       <hr style={{ margin: 35 }} />
-      <div
-      className='ChartThumb'
-        
-      >
+      <div className="ChartThumb">
+        <div className="ChartWrapper">
+          <PieChart chartData={userDataGain} />
+        </div>
+        <div className="ChartWrapper">
+          <PieChart chartData={userDataLost} />
+        </div>
+      </div>
+
+      <hr style={{ margin: 35 }} />
+      <div className="ChartThumb">
         <div className="ChartWrapper">
           <BarChart chartData={userDataGain} />
         </div>
@@ -65,26 +78,14 @@ const Charts = () => {
           <BarChart chartData={userDataLost} />
         </div>
       </div>
+
       <hr style={{ margin: 35 }} />
-      <div
-   className='ChartThumb'
-      >
+      <div className="ChartThumb">
         <div className="ChartWrapper">
           <LineChart chartData={userDataGain} />
         </div>
         <div className="ChartWrapper">
           <LineChart chartData={userDataLost} />
-        </div>
-      </div>
-      <hr style={{ margin: 35 }} />
-      <div
-   className='ChartThumb'
-      >
-        <div className="ChartWrapper">
-          <PieChart chartData={userDataGain} />
-        </div>
-        <div className="ChartWrapper">
-          <PieChart chartData={userDataLost} />
         </div>
       </div>
     </>

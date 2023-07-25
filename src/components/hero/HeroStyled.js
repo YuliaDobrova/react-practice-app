@@ -68,8 +68,8 @@ export const HeroStyled = styled.div`
       }
     }
     @media screen and (min-width: 768px) {
-      width: 90px;
-      height: 90px;
+      width: 80px;
+      height: 80px;
       /* margin-left: -60px;
       margin-right: -60px; */
     }
@@ -91,18 +91,18 @@ export const HeroStyled = styled.div`
 
     @keyframes rocketScale {
       from {
-        transform: scale(0.9);
+        transform: scale(0.75);
         /* transform: rotate(45deg); */
       }
       to {
-        transform: scale(1.1);
+        transform: scale(1);
         /* transform: rotate(45deg); */
       }
     }
 
     @media screen and (min-width: 768px) {
-      width: 90px;
-      height: 90px;
+      width: 80px;
+      height: 80px;
     }
   }
 `;

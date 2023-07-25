@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getWeatherForecast } from '../../services/WeatherService';
-import DateComponent from '../date/DateComponent';
+// import DateComponent from '../date/DateComponent';
 
 import Loader from '../shared/loader/Loader';
 // import { useEffect } from 'react/cjs/react.production.min';
@@ -15,7 +15,7 @@ const defaultWeather = {
 const Weather = () => {
   const [isloading, setIsLoading] = useState(false);
   const [weatherData, setWeatherData] = useState(defaultWeather);
-  const [dataQuery, setDataQuery] = useState('Kyiv');
+  const [dataQuery, setDataQuery] = useState('Vancouver');
 
   // const dataQuerryArray = ['Kyiv', 'Paris', 'London'];
 
@@ -41,12 +41,12 @@ const Weather = () => {
     try {
       setIsLoading(true);
       await getWeatherForecast(dataQuery).then(response => {
-        console.log('response', response);
+        // console.log('response', response);
         setWeatherData({ ...response });
       });
       setIsLoading(false);
     } catch (e) {
-      console.log(e);
+      // console.log(e);
       setIsLoading(false);
     }
   }
@@ -61,16 +61,16 @@ const Weather = () => {
   // setDataQuery(inputValue)
   //   }
 
-  console.log('weatherData', weatherData);
+  // console.log('weatherData', weatherData);
   return (
     <>
       {isloading && <Loader />}
       {/* <input onSubmit={handleSubmit}/> */}
       <div id="weather" className="weather">
-        <DateComponent />
+        {/* <DateComponent /> */}
+        <div className="weather__city-name">{weatherData.name}</div>
         <div className="weather__header">
           <div className="weather__main">
-            <div className="weather__city-name">{weatherData.name}</div>
             <div className="weather__city-main">
               {weatherData.weather[0].main}
             </div>

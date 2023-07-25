@@ -35,6 +35,7 @@ class ImageSearchbar extends Component {
               value={this.state.query}
               onChange={this.onHandleInputChange}
             />
+
             <MyButton type="submit" className="SearchFormBtn">
               <span className="SearchForm-button-label">Search</span>
             </MyButton>
