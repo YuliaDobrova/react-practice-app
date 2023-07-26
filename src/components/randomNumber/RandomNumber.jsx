@@ -9,10 +9,22 @@ const RandomNumber = () => {
 
   function handleMinClick(e) {
     e.preventDefault();
+    console.log('min e.currentTarget.value', e.currentTarget.value);
+    // if (e.currentTarget.value <= maxNum) {
+    // } else {
+    //   alert('Min number must be smaller than Max number.');
+    //   return;
+    // }
     setMinNum(e.currentTarget.value);
   }
   function handleMaxClick(e) {
     e.preventDefault();
+    console.log('max e.currentTarget.value', e.currentTarget.value);
+    // if (e.currentTarget.value >= minNum) {
+    // } else {
+    //   alert('Max number must be bigger than Min number.');
+    //   return;
+    // }
     setMaxNum(e.currentTarget.value);
   }
   const handleClick = () => {
@@ -26,6 +38,7 @@ const RandomNumber = () => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  console.log('num', num);
   return (
     <div
       style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
@@ -42,7 +55,6 @@ const RandomNumber = () => {
       <MyInput
         type="text"
         autoComplete="off"
-        // autoFocus
         value={minNum}
         placeholder="Enter min number"
         onChange={e => handleMinClick(e)}
@@ -69,7 +81,8 @@ const RandomNumber = () => {
         </>
       ) : (
         <p style={{ textAlign: 'center', marginTop: 10 }}>
-          Your generated number is: {num}
+          Your generated number is: {''}
+          {isNaN(num) ? `not a number` : `${num} `}
         </p>
       )}
     </div>

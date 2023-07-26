@@ -8,7 +8,7 @@ const RatingCounter = () => {
   const onResetClick = () => {
     setRateZero(true);
   };
-  const onHandleClick = () => {
+  const onHandleChange = () => {
     setRateZero(false);
   };
 
@@ -37,6 +37,7 @@ const RatingCounter = () => {
             name="rating"
             id="rs0"
             checked={rateZero ? true : false}
+            onChange={onHandleChange}
             // defaultChecked
           />
           <label
@@ -49,7 +50,7 @@ const RatingCounter = () => {
             type="radio"
             name="rating"
             id="rs1"
-            onClick={onHandleClick}
+            onChange={onHandleChange}
           />
           <label className="rating-stars-label" htmlFor="rs1"></label>
           <input
@@ -57,7 +58,7 @@ const RatingCounter = () => {
             type="radio"
             name="rating"
             id="rs2"
-            onClick={onHandleClick}
+            onChange={onHandleChange}
           />
           <label className="rating-stars-label" htmlFor="rs2"></label>
           <input
@@ -65,7 +66,7 @@ const RatingCounter = () => {
             type="radio"
             name="rating"
             id="rs3"
-            onClick={onHandleClick}
+            onChange={onHandleChange}
           />
           <label className="rating-stars-label" htmlFor="rs3"></label>
           <input
@@ -73,7 +74,7 @@ const RatingCounter = () => {
             type="radio"
             name="rating"
             id="rs4"
-            onClick={onHandleClick}
+            onChange={onHandleChange}
           />
           <label className="rating-stars-label" htmlFor="rs4"></label>
           <input
@@ -81,7 +82,7 @@ const RatingCounter = () => {
             type="radio"
             name="rating"
             id="rs5"
-            onClick={onHandleClick}
+            onChange={onHandleChange}
           />
           <label className="rating-stars-label" htmlFor="rs5"></label>
           <span className="rating-counter"></span>

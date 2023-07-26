@@ -10,7 +10,9 @@ const Footer = () => {
     <footer className="Footer">
       <Container>
         <div className="FooterWrapper">
-          <p className="FooterText">©2022 Cteated to improve React skills</p>
+          <p className="FooterText">
+            ©2022-2023 Cteated to improve <br /> React skills
+          </p>
           <svg className="FooterIcon" width="24" height="24">
             <use href={sprite + '#icon-react'}></use>
           </svg>
