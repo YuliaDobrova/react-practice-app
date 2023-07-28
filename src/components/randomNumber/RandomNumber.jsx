@@ -59,15 +59,16 @@ const RandomNumber = () => {
         placeholder="Enter min number"
         onChange={e => handleMinClick(e)}
         style={{ width: 200, textAlign: 'center' }}
+        // autoFocus
       />
       <MyInput
         type="text"
         autoComplete="off"
-        // autoFocus
         value={maxNum}
         placeholder="Enter max number"
         onChange={e => handleMaxClick(e)}
         style={{ width: 200, textAlign: 'center' }}
+        // autoFocus
       />
       <MyButton onClick={handleClick}>Generate random number</MyButton>
       {num === '' ? (
