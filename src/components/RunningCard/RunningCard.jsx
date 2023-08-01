@@ -16,9 +16,9 @@ const RunningCard = () => {
     'No doubt 😉',
     'Absolutely',
     'Possibly',
-    'Stars say NO'
+    'Stars say NO',
   ];
-  const [phrase, setPhrase] = useState("");
+  const [phrase, setPhrase] = useState('');
 
   function getRandomAnswer() {
     const randomAnswer = phrases[Math.floor(Math.random() * 11)];
@@ -42,18 +42,18 @@ const RunningCard = () => {
         }}
       >
         Ask a question, press this button & get your answer!
-      <img
+        <img
           onClick={getRandomAnswer}
-          // className="photo-list-img"
+          className="fortuneteller-img"
           src={ballImage}
           alt="Fortune Ball"
           width="100"
           height="100"
-          style={{marginLeft:"auto", marginRight:"auto"}}
+          // style={{ marginLeft: 'auto', marginRight: 'auto' }}
         />
       </MyButton>
       <div className="card">
-        <h3 style={{textAlign:"center"}}>{phrase}</h3>
+        <h3 style={{ textAlign: 'center' }}>{phrase}</h3>
       </div>
     </>
   );
