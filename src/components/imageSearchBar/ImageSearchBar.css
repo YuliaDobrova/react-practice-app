@@ -1,6 +1,20 @@
 .SearchForm {
   display: flex;
 }
+.search-button-wapper {
+  position: relative;
+  width: 100px;
+}
+.icon-search {
+  fill: rgb(154, 160, 166);
+  position: absolute;
+  top: 4px;
+  right: -4px;
+  /* z-index: 0; */
+}
+.search-button-wapper .icon-search:focus {
+  fill: #61dafb;
+}
 
 /* .SearchFormBtn {
   display: inline-block;

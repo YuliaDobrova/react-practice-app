@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import MyButton from '../shared/button/MyButton';
 import MyInput from '../shared/input/MyInput';
+import sprite from '../../images/sprite.svg';
 import './ImageSearchBar.css';
 
 class ImageSearchbar extends Component {
@@ -30,14 +31,19 @@ class ImageSearchbar extends Component {
               className="SearchForm-input"
               type="text"
               autoComplete="off"
-              autoFocus
+              // autoFocus
               placeholder="Search images"
               value={this.state.query}
               onChange={this.onHandleInputChange}
             />
 
             <MyButton type="submit" className="SearchFormBtn">
-              <span className="SearchForm-button-label">Search</span>
+              <div className="search-button-wapper">
+                <svg className="icon-search" width="18" height="18">
+                  <use href={sprite + '#icon-search'}></use>
+                </svg>
+                <span className="search-button">Search</span>
+              </div>
             </MyButton>
           </form>
         </header>
