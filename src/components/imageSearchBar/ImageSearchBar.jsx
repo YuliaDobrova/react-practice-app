@@ -39,10 +39,12 @@ class ImageSearchbar extends Component {
 
             <MyButton type="submit" className="SearchFormBtn">
               <div className="search-button-wapper">
-                <svg className="icon-search" width="18" height="18">
-                  <use href={sprite + '#icon-search'}></use>
-                </svg>
                 <span className="search-button">Search</span>
+                <div className="search-button-icon-container">
+                  <svg className="search-button-icon" width="18" height="18">
+                    <use href={sprite + '#icon-search'}></use>
+                  </svg>
+                </div>
               </div>
             </MyButton>
           </form>
