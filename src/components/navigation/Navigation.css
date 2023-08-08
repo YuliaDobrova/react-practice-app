@@ -29,10 +29,14 @@
 .NavLink:hover,
 .NavLink:focus {
   color: #61dafb;
+  text-shadow: 1px 1px 3px #ffffff;
+  /* text-shadow: 1px 1px 2px black; */
 }
 .NavLink--active {
   color: #61dafb;
+  filter: drop-shadow(1px 3px 7px #ffffff);
 }
+
 @media screen and (max-width: 768px) {
 }
 @media screen and (min-width: 1250px) {

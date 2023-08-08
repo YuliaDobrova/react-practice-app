@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getWeatherForecast } from '../../services/WeatherService';
-// import DateComponent from '../date/DateComponent';
-
 import Loader from '../shared/loader/Loader';
-// import { useEffect } from 'react/cjs/react.production.min';
 import './Weather.css';
 
 const defaultWeather = {
@@ -67,7 +64,6 @@ const Weather = () => {
       {isloading && <Loader />}
       {/* <input onSubmit={handleSubmit}/> */}
       <div id="weather" className="weather">
-        {/* <DateComponent /> */}
         <div className="weather__city-name">{weatherData.name}</div>
         <div className="weather__header">
           <div className="weather__main">
