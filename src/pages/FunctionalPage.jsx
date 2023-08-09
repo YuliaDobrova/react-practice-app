@@ -33,7 +33,7 @@ const FunctionalPage = () => {
       <hr style={{ margin: 15 }} />
       <AccordionItem
         title="Click the accordion below to expand/collapse the accordion content. "
-        description="Here could be a secret message... 😄"
+        description="Here could be a secret message... 😊"
       />
       <hr style={{ margin: 15 }} />
       <TippyComponent />

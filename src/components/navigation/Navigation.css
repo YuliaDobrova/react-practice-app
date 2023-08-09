@@ -30,7 +30,6 @@
 .NavLink:focus {
   color: #61dafb;
   text-shadow: 1px 1px 3px #ffffff;
-  /* text-shadow: 1px 1px 2px black; */
 }
 .NavLink--active {
   color: #61dafb;

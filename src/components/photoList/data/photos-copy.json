@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "💜",
+    "text": "Downtown View",
+    "imgUrl": "https://images.unsplash.com/photo-1609825488888-3a766db05542?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80"
+  },
+  {
+    "id": "2",
+    "title": "💛",
+    "text": "Burrard Inlet",
+    "imgUrl": "https://images.unsplash.com/photo-1559510980-7246660a93d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2956&q=80"
+  },
+  {
+    "id": "3",
+    "title": "💙",
+    "text": "Lions Gate Bridge",
+    "imgUrl": "https://images.unsplash.com/photo-1578961509811-1f55a380e31f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+  },
+  {
+    "id": "4",
+    "title": "🤍",
+    "text": "Broadway-City Hall",
+    "imgUrl": "https://images.unsplash.com/photo-1553164995-1fe011843ba8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+  }
+]
