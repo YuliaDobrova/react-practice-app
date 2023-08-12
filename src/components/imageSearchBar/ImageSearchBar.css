@@ -15,8 +15,6 @@
 .search-button-icon {
   fill: #61dafb;
 }
-.search-button-wapper:hover
-  .search-button-icon-container
-  .search-button-icon:hover {
+.search-button-wapper:hover .search-button-icon {
   filter: drop-shadow(0px 2px 3px #ffffff);
 }

@@ -20,9 +20,9 @@ import DateComponent from '../components/date/DateComponent';
 const FunctionalPage = () => {
   return (
     <>
-      <CircleLoader />
-      <hr style={{ margin: 15 }} />
       <DateComponent />
+      <hr style={{ margin: 15 }} />
+      <CircleLoader />
       <hr style={{ margin: 15 }} />
       <p style={{ textAlign: 'center', marginBottom: 20 }}>
         <b>Weather widget</b>
@@ -30,13 +30,6 @@ const FunctionalPage = () => {
       <Weather />
       <hr style={{ margin: 15 }} />
       <PhotoList />
-      <hr style={{ margin: 15 }} />
-      <AccordionItem
-        title="Click the accordion below to expand/collapse the accordion content. "
-        description="Here could be a secret message... 😊"
-      />
-      <hr style={{ margin: 15 }} />
-      <TippyComponent />
       <hr style={{ margin: 15 }} />
       <DragAndDrop />
       <hr style={{ margin: 15 }} />
@@ -57,6 +50,13 @@ const FunctionalPage = () => {
       <ColorSwitcher />
       <hr style={{ margin: 15 }} />
       <ColorPicker />
+      <hr style={{ margin: 15 }} />
+      <AccordionItem
+        title="Click the accordion below to expand/collapse the accordion content. "
+        description="Here could be a secret message... 😊"
+      />
+      <hr style={{ margin: 15 }} />
+      <TippyComponent />
     </>
   );
 };

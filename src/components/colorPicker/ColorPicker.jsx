@@ -12,6 +12,7 @@ function ColorPicker() {
           // height: '100vh',
           height: 150,
           margin: 20,
+          marginBottom: 40,
           borderRadius: 12,
           textAlign: 'center',
         }}
