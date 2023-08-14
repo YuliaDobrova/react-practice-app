@@ -7,7 +7,7 @@ import FunctionalPage from '../pages/FunctionalPage';
 import ContactsPage from '../pages/ContactsPage';
 import LoginPage from '../pages/LoginPage';
 import ImagesPage from '../pages/ImagesPage';
-// import BoardPage from '../pages/BoardPage';
+import BoardPage from '../pages/BoardPage';
 
 export const privateMainRoutes = [
   {
@@ -35,11 +35,11 @@ export const privateMainRoutes = [
     path: '/query',
     element: <QueryPage />,
   },
-  // {
-  //   name: 'Board',
-  //   path: '/board',
-  //   element: <BoardPage />,
-  // },
+  {
+    name: 'Board',
+    path: '/board',
+    element: <BoardPage />,
+  },
   {
     name: 'Images',
     path: '/images',
@@ -93,11 +93,11 @@ export const publicMainRoutes = [
     element: <QueryPage />,
   },
 
-  // {
-  //   name: 'Board',
-  //   path: '/board',
-  //   element: <BoardPage />,
-  // },
+  {
+    name: 'Board',
+    path: '/board',
+    element: <BoardPage />,
+  },
   // {
   //   name: 'Login',
   //   path: '/login',

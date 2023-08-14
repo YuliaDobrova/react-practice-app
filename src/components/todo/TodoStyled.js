@@ -16,7 +16,6 @@ export const TodoWrapper = styled.div`
       width: 550px;
     }
     &__header {
-      /* background-color: rgba(139, 152, 178, 0.5); */
       padding: 20px 30px;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -37,7 +36,6 @@ export const TodoWrapper = styled.div`
       input {
         background-color: rgba(139, 152, 178, 0.25);
         border: 1px solid #61dafb;
-        /* border: 0; */
         font-size: 18px;
         padding: 10px;
         color: #ffffff;
@@ -84,7 +82,6 @@ export const TodoWrapper = styled.div`
         }
 
         &:hover {
-          /* background-color: #fbfbfb; */
           svg {
             path {
               fill: #61dafb;
@@ -96,7 +93,6 @@ export const TodoWrapper = styled.div`
 
     &__list {
       &-item {
-        /* $self: &; */
         display: flex;
         padding: 20px;
         border-bottom: 1px solid #61dafb;
@@ -139,7 +135,6 @@ export const TodoWrapper = styled.div`
             display: block;
           }
 
-          /* #{$self}-check { */
           .todo__list-item-check {
             background-color: rgba(97, 218, 251, 0.5);
             svg {
@@ -147,8 +142,6 @@ export const TodoWrapper = styled.div`
             }
           }
 
-          /* #{$self}-check,
-          #{$self}-check:hover { */
           &-item-check,
           &-item-check:hover {
             background-color: #61dafb;

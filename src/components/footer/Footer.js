@@ -11,20 +11,15 @@ const Footer = () => {
       <Container>
         <div className="FooterWrapper">
           <p className="FooterText">
-            ©2022-2023 Cteated to improve <br /> React skills
+            ©2021-2023
+            <br /> Cteated to improve React skills
           </p>
           <svg className="FooterIcon" width="24" height="24">
             <use href={sprite + '#icon-react'}></use>
           </svg>
         </div>
         <p className="FooterDeveloperText">
-          Designed and developed by{' '}
-          {/* <a
-            href="https://www.linkedin.com/in/yuliia-dobrova-37a335217/"
-            target="_blank"
-            rel="noreferrer"
-            className="Developer"
-          > */}
+          Designed and developed by
           <b>
             <i>Yuliia Dobrova</i>
           </b>
