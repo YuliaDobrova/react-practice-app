@@ -6,15 +6,19 @@ import { TodoWrapper } from './TodoStyled';
 const Todo = () => {
   const [tasks, setTasks] = useState([
     {
-      text: 'Develop TodoList with ReactJS',
+      text: 'Learn Web Development',
       completed: true,
     },
     {
-      text: 'Find a job as Frontend Developer',
+      text: 'Improve ReactJS skills',
       completed: true,
     },
     {
-      text: 'Get a new job and a new friendly team in BC',
+      text: 'Work as Frontend Developer for 2 years',
+      completed: true,
+    },
+    {
+      text: 'Get a job offer in Canada',
       completed: false,
     },
   ]);

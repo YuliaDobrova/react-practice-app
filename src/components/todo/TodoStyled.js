@@ -96,28 +96,10 @@ export const TodoWrapper = styled.div`
 
     &__list {
       &-item {
-        $self: &;
+        /* $self: &; */
         display: flex;
         padding: 20px;
         border-bottom: 1px solid #61dafb;
-
-        &--completed {
-          text-decoration: line-through;
-          svg {
-            display: block;
-          }
-
-          #{$self}-check {
-            svg {
-              display: block;
-            }
-          }
-
-          #{$self}-check,
-          #{$self}-check:hover {
-            background-color: #61dafb;
-          }
-        }
 
         &-check {
           display: flex;
@@ -136,6 +118,40 @@ export const TodoWrapper = styled.div`
 
           &:hover {
             background-color: rgba(97, 218, 251, 0.5);
+          }
+        }
+
+        &-item-check {
+          svg {
+            display: block;
+          }
+        }
+
+        &-item-check,
+        &-item-check:hover {
+          background-color: #61dafb;
+        }
+
+        &--completed {
+          text-decoration: line-through;
+
+          svg {
+            display: block;
+          }
+
+          /* #{$self}-check { */
+          .todo__list-item-check {
+            background-color: rgba(97, 218, 251, 0.5);
+            svg {
+              display: block;
+            }
+          }
+
+          /* #{$self}-check,
+          #{$self}-check:hover { */
+          &-item-check,
+          &-item-check:hover {
+            background-color: #61dafb;
           }
         }
 
