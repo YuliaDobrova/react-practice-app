@@ -16,10 +16,13 @@ import Weather from '../components/weather/Weather';
 import RandomNumber from '../components/randomNumber/RandomNumber';
 import RatingCounter from '../components/ratingCounter/RatingCounter';
 import DateComponent from '../components/date/DateComponent';
+import ResponsivePhrase from '../components/responsivePhrase/ResponsivePhrase';
 
 const FunctionalPage = () => {
   return (
     <>
+      <ResponsivePhrase />
+      <hr style={{ margin: 15 }} />
       <DateComponent />
       <hr style={{ margin: 15 }} />
       <CircleLoader />

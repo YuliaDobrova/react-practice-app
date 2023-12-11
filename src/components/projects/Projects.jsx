@@ -98,11 +98,7 @@ const Projects = () => {
                   <use href={sprite + '#icon-link'}></use>
                 </svg>
               </a>
-              <a
-                className="project-link"
-                target="_black"
-                rel="noopener noreferrer"
-              >
+              <a href="" className="project-link">
                 <span className="project-link-text">Link to the Code</span>
                 <br />
                 <span className="project-link-text">cannot be shared</span>
