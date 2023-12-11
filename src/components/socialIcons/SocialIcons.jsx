@@ -5,7 +5,7 @@ const SocialIcons = () => {
   return (
     <div className="container">
       <a
-        href="https://www.linkedin.com/in/yuliia-dobrova-37a335217/"
+        href="https://www.linkedin.com/in/yuliia-dobrova/"
         target="_black"
         rel="noopener noreferrer"
       >

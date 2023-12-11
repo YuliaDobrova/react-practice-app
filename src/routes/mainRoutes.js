@@ -8,12 +8,18 @@ import ContactsPage from '../pages/ContactsPage';
 import LoginPage from '../pages/LoginPage';
 import ImagesPage from '../pages/ImagesPage';
 import BoardPage from '../pages/BoardPage';
+import ProjectsPage from '../pages/ProjectsPage';
 
 export const privateMainRoutes = [
   {
     name: 'Home',
     path: '/',
     element: <HomePage />,
+  },
+  {
+    name: 'Projects',
+    path: '/projects',
+    element: <ProjectsPage />,
   },
   {
     name: 'Functional',
@@ -63,6 +69,11 @@ export const publicMainRoutes = [
     element: <HomePage />,
   },
   {
+    name: 'Projects',
+    path: '/projects',
+    element: <ProjectsPage />,
+  },
+  {
     name: 'Functional',
     path: '/functional',
     element: <FunctionalPage />,
@@ -98,6 +109,7 @@ export const publicMainRoutes = [
     path: '/board',
     element: <BoardPage />,
   },
+
   // {
   //   name: 'Login',
   //   path: '/login',

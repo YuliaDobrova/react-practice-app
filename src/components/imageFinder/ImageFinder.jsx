@@ -9,6 +9,7 @@ import ImageGallery from '../imageGallery/ImageGallery';
 import ImageSearchbar from '../imageSearchBar/ImageSearchBar';
 import './ImageFinder.css';
 
+// CLASS COMPONENT for example
 class ImageFinder extends Component {
   state = {
     query: '',
