@@ -100,7 +100,6 @@ const Projects = () => {
               </a>
               <a
                 className="project-link"
-                // href="https://yuliadobrova.github.io/my-resume/"
                 target="_black"
                 rel="noopener noreferrer"
               >
