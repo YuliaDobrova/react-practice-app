@@ -17,8 +17,10 @@ import RandomNumber from '../components/randomNumber/RandomNumber';
 import RatingCounter from '../components/ratingCounter/RatingCounter';
 import DateComponent from '../components/date/DateComponent';
 import ResponsivePhrase from '../components/responsivePhrase/ResponsivePhrase';
+import useWindowDimensions from '../hooks/widthHook';
 
 const FunctionalPage = () => {
+  const { width } = useWindowDimensions();
   return (
     <>
       <ResponsivePhrase />
@@ -34,8 +36,12 @@ const FunctionalPage = () => {
       <hr style={{ margin: 15 }} />
       <PhotoList />
       <hr style={{ margin: 15 }} />
-      <DragAndDrop />
-      <hr style={{ margin: 15 }} />
+      {width >= 1100 && (
+        <>
+          <DragAndDrop />
+          <hr style={{ margin: 15 }} />
+        </>
+      )}
       <CommentSlider />
       <hr style={{ margin: 15 }} />
       <RunningCard />

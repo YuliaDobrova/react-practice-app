@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Modal from '../../components/shared/modal/Modal';
 import photo from '../../images/Yulia.png';
+import goit from '../../images/goit.png';
+import epam from '../../images/epam.png';
 import Typed from 'react-typed';
 //to install react-typed used this: npm i react-typed --legacy-peer-deps
 import './TypingText.css';
@@ -64,13 +66,7 @@ const TypingText = () => {
         </div>
       </div>
       <Modal active={modalPhotoActive} setActive={setModalPhotoActive}>
-        <img
-          className="photo-list-img-large"
-          src={photo}
-          width="150"
-          height="150"
-          alt="myPhoto"
-        />
+        <img className="img-large" src={goit} alt="certificate" />
       </Modal>
     </>
   );

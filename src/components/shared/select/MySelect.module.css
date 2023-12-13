@@ -6,18 +6,19 @@
   width: 100%;
   min-width: 15ch;
   max-width: 30ch;
-  border: 1px solid rgba(139, 152, 178, 0.5);
-  border-radius: 0.5em;
-  padding: 0.25em 0.25em;
+  color: #fff;
+  /* border: 1px solid rgba(139, 152, 178, 0.5); */
+  border-radius: 25px;
+  padding: 0.25em 0.75em;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.25rem;
+  font-size: 1rem;
   cursor: pointer;
   line-height: 1.1;
   background-color: rgba(139, 152, 178, 0.5);
-  background-image: linear-gradient(to top, #777777, rgb(201, 201, 201) 25%);
+  /* background-image: linear-gradient(to top, #777777, rgb(201, 201, 201) 25%); */
   display: grid;
   grid-template-areas: 'select';
   align-items: center;
@@ -34,6 +35,7 @@
   background-color: rgba(139, 152, 178, 0.95);
   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
   justify-self: end;
+  /* background-color: rgba(139, 152, 178, 0.5); */
 }
 
 select,
@@ -47,19 +49,22 @@ select,
   left: -1px;
   right: -1px;
   bottom: -1px;
-  border: 2px solid rgba(97, 218, 251, 1);
+  /* border: 2px solid rgba(97, 218, 251, 1); */
   border-radius: inherit;
 }
 
-select:invalid:not(:focus) {
+/* select:invalid:not(:focus) {
   color: gray;
 }
 select:invalid:focus {
   color: transparent;
-}
-select:focus option {
-  color: initial;
+}*/
 
+/* select:focus option {
+  color: initial;
   background: rgba(96, 98, 102, 0.5);
   color: #000;
+} */
+.select-option {
+  width: 100px;
 }

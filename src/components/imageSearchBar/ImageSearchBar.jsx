@@ -25,7 +25,7 @@ class ImageSearchbar extends Component {
   render() {
     return (
       <>
-        <header className="Searchbar">
+        <div className="Searchbar">
           <form className="SearchForm" onSubmit={this.onHandleSubmit}>
             <MyInput
               className="SearchForm-input"
@@ -48,7 +48,7 @@ class ImageSearchbar extends Component {
               </div>
             </MyButton>
           </form>
-        </header>
+        </div>
       </>
     );
   }

@@ -63,8 +63,8 @@ class ImageFinder extends Component {
   render() {
     return (
       <Container>
+        <ImageSearchbar onChange={this.onInputQuery} />
         <div className="imageGrid">
-          <ImageSearchbar onChange={this.onInputQuery} />
           <ImageGallery
             images={this.state.images}
             addLargeImg={this.addLargeImg}
