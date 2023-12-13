@@ -6,6 +6,8 @@ import dental from '../../images/project-img-dental.png';
 import movie from '../../images/project-img-movie.png';
 import ball from '../../images/project-img-ball.png';
 import boards from '../../images/project-img-boards.png';
+import event from '../../images/project-img-event.png';
+import icecream from '../../images/project-img-icecream.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -14,13 +16,13 @@ const Projects = () => {
       <h1 className="project-title">My Projects</h1>
       <div className="project-cards">
         {/* RESUME */}
-        <div className="project-card card-1">
+        <div className="project-card">
           <div className="project-card-disc">
             <h1>Resume</h1>
             <div>
               <a
                 className="project-link"
-                href="https://github.com/YuliaDobrova/my-resume"
+                href="https://yuliadobrova.github.io/my-resume/"
                 target="_black"
                 rel="noopener noreferrer"
               >
@@ -32,7 +34,7 @@ const Projects = () => {
               </a>
               <a
                 className="project-link"
-                href="https://yuliadobrova.github.io/my-resume/"
+                href="https://github.com/YuliaDobrova/my-resume"
                 target="_black"
                 rel="noopener noreferrer"
               >
@@ -48,9 +50,9 @@ const Projects = () => {
         </div>
 
         {/* DENTIST */}
-        <div className="project-card card-2">
+        <div className="project-card">
           <div className="project-card-disc">
-            <h1>Dentist</h1>
+            <h1>Dental Center</h1>
             <div>
               <a
                 className="project-link"
@@ -82,9 +84,9 @@ const Projects = () => {
         </div>
 
         {/* WIZWORK */}
-        <div className="project-card card-3">
+        <div className="project-card">
           <div className="project-card-disc">
-            <h1>Wizwork</h1>
+            <h1>Network "Wizwork"</h1>
             <div>
               <a
                 className="project-link"
@@ -109,7 +111,7 @@ const Projects = () => {
         </div>
 
         {/* MOVIE */}
-        <div className="project-card card-4">
+        <div className="project-card">
           <div className="project-card-disc">
             <h1>Movie Finder</h1>
             <div>
@@ -141,8 +143,77 @@ const Projects = () => {
           </div>
           <img src={movie} alt="movie" />
         </div>
+
+        {/* EVENT BOOSTER */}
+        <div className="project-card">
+          <div className="project-card-disc">
+            <h1>Event Booster</h1>
+            <div>
+              <a
+                className="project-link"
+                href="https://yuliadobrova.github.io/team-project-js/"
+                target="_black"
+                rel="noopener noreferrer"
+              >
+                <span className="project-link-text">Link to the Project</span>
+                <br />
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-link'}></use>
+                </svg>
+              </a>
+              <a
+                className="project-link"
+                href="https://github.com/YuliaDobrova/team-project-js"
+                target="_black"
+                rel="noopener noreferrer"
+              >
+                <span className="project-link-text">Link to the Code</span>
+                <br />
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-github'}></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <img src={event} alt="event" />
+        </div>
+
+        {/* ICE CREAM */}
+        <div className="project-card">
+          <div className="project-card-disc">
+            <h1>Ice Cream</h1>
+            <div>
+              <a
+                className="project-link"
+                href="https://yuliadobrova.github.io/team-project-html-css/"
+                target="_black"
+                rel="noopener noreferrer"
+              >
+                <span className="project-link-text">Link to the Project</span>
+                <br />
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-link'}></use>
+                </svg>
+              </a>
+              <a
+                className="project-link"
+                href="https://github.com/YuliaDobrova/team-project-html-css"
+                target="_black"
+                rel="noopener noreferrer"
+              >
+                <span className="project-link-text">Link to the Code</span>
+                <br />
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-github'}></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <img src={icecream} alt="icecream" />
+        </div>
+
         {/* MAGIC BALL */}
-        <div className="project-card card-5">
+        <div className="project-card">
           <div className="project-card-disc">
             <h1>Magic Ball</h1>
             <div>
@@ -174,8 +245,9 @@ const Projects = () => {
           </div>
           <img src={ball} alt="ball" />
         </div>
+
         {/* LIGHT BOARDS */}
-        <div className="project-card card-6">
+        <div className="project-card">
           <div className="project-card-disc">
             <h1>Light Boards</h1>
             <div>

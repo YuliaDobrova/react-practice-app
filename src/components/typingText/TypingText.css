@@ -1,0 +1,155 @@
+:root {
+  --skin-color: #61dafb;
+  --bg-black-900: #080823;
+  --color-one: #ffffff;
+  --color-two: #61dafb;
+  --color-three: #66b6fc;
+  --color-four: #28cabf;
+}
+
+.home-info-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-info {
+  text-align: center;
+}
+
+.hello {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+h3.hello span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: var(--skin-color);
+}
+
+.my-profession {
+  padding-left: 35px;
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.typing {
+  color: var(--skin-color);
+  font-size: 30px;
+}
+
+.home-img {
+  margin-top: 30px;
+  flex: 0 0 40%;
+  text-align: center;
+  position: relative;
+  animation-timing-function: ease-in-out;
+  animation-name: homeImg;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes homeImg {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.home-img::before {
+  content: '';
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-top: solid 5px var(--skin-color);
+  border-left: solid 5px var(--skin-color);
+  top: -16px;
+  left: -16px;
+}
+
+.home-img::after {
+  content: '';
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-bottom: solid 5px var(--skin-color);
+  border-right: solid 5px var(--skin-color);
+  bottom: -20px;
+  right: -20px;
+}
+
+.home-img img {
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 8px 10px 20px -5px var(--skin-color);
+}
+
+.home-info .name,
+.typing {
+  text-align: center;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: runningColor 10s infinite ease-out;
+  background-size: 300%;
+  background-position: -100px;
+  background-image: linear-gradient(
+    90deg,
+    var(--color-one),
+    var(--color-two),
+    var(--color-three),
+    var(--color-four),
+    var(--color-one)
+  );
+}
+
+@keyframes runningColor {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 200%;
+  }
+}
+
+.home-info-text {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1250px) {
+  .home-info-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: normal;
+  }
+
+  .home-info .name,
+  .typing {
+    font-size: 2rem;
+  }
+
+  .home-img::before {
+    top: -16px;
+    left: 20px;
+  }
+
+  .home-img::after {
+    bottom: -18px;
+    right: 15px;
+  }
+}
