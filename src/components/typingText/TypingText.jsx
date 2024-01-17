@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from '../../components/shared/modal/Modal';
 import photo from '../../images/Yulia.png';
 import goit from '../../images/goit.png';
-import epam from '../../images/epam.png';
+// import epam from '../../images/epam.png';
 import Typed from 'react-typed';
 //to install react-typed used this: npm i react-typed --legacy-peer-deps
 import './TypingText.css';
@@ -12,8 +12,8 @@ const TypingText = () => {
 
   return (
     <>
-      <div class="home-info-wrapper">
-        <div class="home-info">
+      <div className="home-info-wrapper">
+        <div className="home-info">
           <h4 className="hello">
             Hello, my name is <span className="name">Yuliia Dobrova</span>
           </h4>
@@ -37,7 +37,7 @@ const TypingText = () => {
               />
             </span>
           </h5>
-          <p class="home-info-text">
+          <p className="home-info-text">
             I'm delighted to welcome you to my{' '}
             <span
               style={{
@@ -52,10 +52,10 @@ const TypingText = () => {
             to explore & learn!
           </p>
         </div>
-        <div class="home-img ">
+        <div className="home-img ">
           <img
             src={photo}
-            alt="Yuliia's photo"
+            alt="Yuliia"
             width="250"
             height="250"
             style={{ borderRadius: '20%', cursor: 'pointer' }}

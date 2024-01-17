@@ -1,23 +1,12 @@
 .project-title {
   text-align: center;
   color: #61dafb;
-  /* text-shadow: 1px 1px 3px #ffffff; */
   filter: drop-shadow(1px 3px 7px #ffffff);
   display: block;
   margin-bottom: 30px;
 }
 
 .project-cards {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 0 40px;
-  margin: auto;
-  margin-top: 3rem;
-  gap: 4rem;
-  height: 100vh; */
   display: grid;
   max-width: 300px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -35,9 +24,8 @@
   overflow: hidden;
   width: 275px;
   height: 275px;
-  border: 3px solid rgb(206, 203, 203);
   border-radius: 30px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: 0 0 10px 5px #48abe0;
   transition: 0.4s;
   margin-bottom: 30px;
   margin-left: auto;
@@ -67,7 +55,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 3rem 0;
-  background: linear-gradient(rgba(139, 152, 178, 0.5), #61dafb);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.85)) 20%
+    80%;
   transform: translateY(100%);
   transition: all 0.3s ease;
 }
@@ -85,7 +74,7 @@
   color: #61dafb;
   text-shadow: 1px 1px 3px #ffffff;
   filter: drop-shadow(1px 3px 7px #ffffff);
-  font-size: 2rem;
+  font-size: 1.6rem;
   width: 80%;
   margin: auto;
   text-align: center;
@@ -104,9 +93,24 @@
   flex-direction: column;
   align-items: center;
   font-family: system-ui;
-  color: rgba(87, 94, 108, 0.85);
+  color: #ffffff;
   text-shadow: 1px 1px 3px #ffffff;
   filter: drop-shadow(1px 3px 7px #ffffff);
+}
+.project-link-text:hover,
+.project-link-text:focus {
+  color: #000;
+  text-shadow: 1px 1px 5px #61dafb;
+}
+
+.project-link-text.nolink {
+  cursor: initial;
+  margin-top: 15px;
+}
+.project-link-text.nolink:hover,
+.project-link-text.nolink:focus {
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #ffffff;
 }
 
 .project-icon {
@@ -114,14 +118,14 @@
   margin-left: auto;
   margin-right: auto;
   fill: #ffffff;
-  animation: projectIcon 1500ms infinite alternate;
+  animation: projectIcon 1000ms infinite alternate;
 }
 @keyframes projectIcon {
   from {
     fill: #ffffff;
   }
   to {
-    fill: rgba(139, 152, 178, 0.75);
+    fill: #61dafb;
   }
 }
 

@@ -11,7 +11,7 @@ const Footer = () => {
       <Container>
         <div className="FooterWrapper">
           <p className="FooterText">
-            ©2021-2023
+            ©2021-2024
             <br /> Cteated to improve React skills
           </p>
           <svg className="FooterIcon" width="24" height="24">
@@ -23,7 +23,6 @@ const Footer = () => {
           <b>
             <i>Yuliia Dobrova</i>
           </b>
-          {/* </a> */}
         </p>
         <SocialIcons />
       </Container>

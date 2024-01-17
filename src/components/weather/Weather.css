@@ -6,7 +6,8 @@
   padding: 20px;
   max-width: 350px;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 0 30px 10px #48abe0;
 }
 
 .weather__loading {

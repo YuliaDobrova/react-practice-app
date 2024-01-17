@@ -1,5 +1,5 @@
 import React from 'react';
-import CircleLoader from '../components/circleLoader';
+// import CircleLoader from '../components/circleLoader';
 // import RadioButton from '../components/radioButton/RadioButton';
 import PhotoList from '../components/photoList';
 import AccordionItem from '../components/accordionItem/AccordionItem';
@@ -27,8 +27,8 @@ const FunctionalPage = () => {
       <hr style={{ margin: 15 }} />
       <DateComponent />
       <hr style={{ margin: 15 }} />
-      <CircleLoader />
-      <hr style={{ margin: 15 }} />
+      {/* <CircleLoader />
+      <hr style={{ margin: 15 }} /> */}
       <p style={{ textAlign: 'center', marginBottom: 20 }}>
         <b>Weather widget</b>
       </p>

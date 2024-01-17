@@ -18,10 +18,11 @@ const PostForm = ({ create }) => {
   };
 
   return (
-    <form className="form">
+    <form className="form" id="form">
       {/* Управляемый компонент */}
       <MyInput
         value={post.title}
+        id="title"
         // onChange={e => setTitle(e.target.value)}
         onChange={e => setPost({ ...post, title: e.target.value })}
         type="text"
@@ -29,6 +30,7 @@ const PostForm = ({ create }) => {
       />
       <MyInput
         value={post.body}
+        id="body"
         // onChange={e => setBody(e.target.value)}
         onChange={e => setPost({ ...post, body: e.target.value })}
         type="text"

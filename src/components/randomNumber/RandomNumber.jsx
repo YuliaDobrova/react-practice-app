@@ -19,7 +19,7 @@ const RandomNumber = () => {
   }
   function handleMaxClick(e) {
     e.preventDefault();
-    console.log('max e.currentTarget.value', e.currentTarget.value);
+    // console.log('max e.currentTarget.value', e.currentTarget.value);
     // if (e.currentTarget.value >= minNum) {
     // } else {
     //   alert('Max number must be bigger than Min number.');
@@ -38,7 +38,7 @@ const RandomNumber = () => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  console.log('num', num);
+  // console.log('num', num);
   return (
     <div
       style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}

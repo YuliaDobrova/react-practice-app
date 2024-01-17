@@ -2,7 +2,12 @@ import React from 'react';
 import Todo from '../components/todo/Todo';
 
 const TodoPage = () => {
-  return <Todo />;
+  return (
+    <>
+      <div>1</div>
+      <Todo />
+    </>
+  );
 };
 
 export default TodoPage;

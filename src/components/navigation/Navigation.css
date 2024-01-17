@@ -18,21 +18,26 @@
   margin-right: 0;
 }
 .NavLink {
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   font-weight: 500;
   text-decoration: none;
   padding-bottom: 1px;
-  border-bottom: 1px solid rgba(139, 152, 178, 0.5);
+  text-transform: uppercase;
+  /* border-bottom: 1px solid rgba(139, 152, 178, 0.5); */
   cursor: pointer;
 }
 .NavLink:hover,
 .NavLink:focus {
   color: #61dafb;
+  text-transform: uppercase;
+  font-size: 18px;
   text-shadow: 1px 1px 3px #ffffff;
 }
 .NavLink--active {
   color: #61dafb;
+  text-transform: uppercase;
+  font-size: 18px;
   filter: drop-shadow(1px 3px 7px #ffffff);
 }
 
