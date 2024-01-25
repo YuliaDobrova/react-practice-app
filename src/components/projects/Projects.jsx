@@ -9,6 +9,7 @@ import boards from '../../images/project-img-boards.png';
 import event from '../../images/project-img-event.png';
 import icecream from '../../images/project-img-icecream.png';
 import marsden from '../../images/project-img-marsden.png';
+import starwars from '../../images/project-img-starwars.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -148,7 +149,7 @@ const Projects = () => {
           <img src={marsden} alt="marsden" />
         </div>
 
-        {/* MOVIE */}
+        {/* MOVIE SEARCH*/}
         <div className="project-card">
           <div className="project-card-disc">
             <h1>Movie Finder</h1>
@@ -182,14 +183,14 @@ const Projects = () => {
           <img src={movie} alt="movie" />
         </div>
 
-        {/* EVENT BOOSTER */}
+        {/* STAR WARS */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Event Booster</h1>
+            <h1>Star Wars</h1>
             <div>
               <a
                 className="project-link"
-                href="https://yuliadobrova.github.io/team-project-js/"
+                href="https://star-wars-lord.netlify.app/"
                 target="_black"
                 rel="noopener noreferrer"
               >
@@ -201,7 +202,7 @@ const Projects = () => {
               </a>
               <a
                 className="project-link"
-                href="https://github.com/YuliaDobrova/team-project-js"
+                href="https://github.com/YuliaDobrova/star-wars"
                 target="_black"
                 rel="noopener noreferrer"
               >
@@ -213,7 +214,7 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <img src={event} alt="event" />
+          <img src={starwars} alt="starwars" />
         </div>
 
         {/* ICE CREAM */}
@@ -248,6 +249,40 @@ const Projects = () => {
             </div>
           </div>
           <img src={icecream} alt="icecream" />
+        </div>
+
+        {/* EVENT BOOSTER */}
+        <div className="project-card">
+          <div className="project-card-disc">
+            <h1>Event Booster</h1>
+            <div>
+              <a
+                className="project-link"
+                href="https://yuliadobrova.github.io/team-project-js/"
+                target="_black"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-link'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Project</span>
+              </a>
+              <a
+                className="project-link"
+                href="https://github.com/YuliaDobrova/team-project-js"
+                target="_black"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-github'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Code</span>
+              </a>
+            </div>
+          </div>
+          <img src={event} alt="event" />
         </div>
 
         {/* MAGIC BALL */}
