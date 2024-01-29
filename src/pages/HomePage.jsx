@@ -20,6 +20,7 @@ const HomePage = () => {
           The best way to practice and improve React skills is to create an
           application on your own.
         </p>
+
         <TypingText />
         <div
           style={{

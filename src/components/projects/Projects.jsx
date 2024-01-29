@@ -20,7 +20,7 @@ const Projects = () => {
         {/* RESUME */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Resume</h1>
+            <h1 className="project-card-title">My Resume</h1>
             <div>
               <a
                 className="project-link"
@@ -54,7 +54,7 @@ const Projects = () => {
         {/* DENTIST */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Dental Center</h1>
+            <h1 className="project-card-title">Dental Center</h1>
             <div>
               <a
                 className="project-link"
@@ -88,7 +88,7 @@ const Projects = () => {
         {/* WIZWORK */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Social Network</h1>
+            <h1 className="project-card-title">Social Network</h1>
             <div>
               <a
                 className="project-link"
@@ -118,7 +118,7 @@ const Projects = () => {
         {/* SCOTT */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Personal Website</h1>
+            <h1 className="project-card-title">Personal Website</h1>
             <div>
               <a
                 className="project-link"
@@ -152,7 +152,7 @@ const Projects = () => {
         {/* MOVIE SEARCH*/}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Movie Finder</h1>
+            <h1 className="project-card-title">Movie Finder</h1>
             <div>
               <a
                 className="project-link"
@@ -186,7 +186,7 @@ const Projects = () => {
         {/* STAR WARS */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Star Wars</h1>
+            <h1 className="project-card-title">Star Wars</h1>
             <div>
               <a
                 className="project-link"
@@ -220,7 +220,7 @@ const Projects = () => {
         {/* ICE CREAM */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Ice Cream</h1>
+            <h1 className="project-card-title">Ice Cream</h1>
             <div>
               <a
                 className="project-link"
@@ -254,7 +254,7 @@ const Projects = () => {
         {/* EVENT BOOSTER */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Event Booster</h1>
+            <h1 className="project-card-title">Event Booster</h1>
             <div>
               <a
                 className="project-link"
@@ -288,7 +288,7 @@ const Projects = () => {
         {/* MAGIC BALL */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Magic Ball</h1>
+            <h1 className="project-card-title">Magic Ball</h1>
             <div>
               <a
                 className="project-link"
@@ -322,7 +322,7 @@ const Projects = () => {
         {/* LIGHT BOARDS */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1>Light Boards</h1>
+            <h1 className="project-card-title">Light Boards</h1>
             <div>
               <a
                 className="project-link"

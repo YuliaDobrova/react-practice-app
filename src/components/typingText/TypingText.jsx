@@ -19,17 +19,17 @@ const TypingText = () => {
           </h4>
           <h5 className="my-profession">
             I'm a{' '}
-            <span className="typing ">
+            <span className="typing">
               {/* ===========Typing-annimation================ */}
               <Typed
                 strings={[
+                  'Software Engineer',
                   'Front-end Developer',
                   'Software Developer',
                   'Web Developer',
                   'Javascript Developer',
                   'React Developer',
                   'Full-stack Developer',
-                  'Software Engineer',
                 ]}
                 typeSpeed={40}
                 backSpeed={50}
@@ -47,10 +47,39 @@ const TypingText = () => {
               REACT JS PRACTICE APP
             </span>
             , where knowledge meets opportunity. <br />
-            Dive into the world of React.js and discover the vast possibilities
-            it offers. I'm happy to share my knowledge and insights. Feel free
-            to explore & learn!
           </p>
+          <p className="home-info-text">
+            Dive into the world of React.js and discover the vast possibilities
+            it offers.{' '}
+            <span
+              style={{
+                color: '#61dafb',
+              }}
+            >
+              I'm happy to share my knowledge and insights.
+            </span>{' '}
+            <br />
+            Feel free to explore & learn!
+            <br />
+            The code to this App in on my{' '}
+            <a
+              href="https://github.com/YuliaDobrova/react-practice-app"
+              target="_blank"
+              style={{ textDecoration: 'underline', color: '#61dafb' }}
+            >
+              GitHub
+            </a>{' '}
+            Page
+          </p>
+
+          {/* <br />
+          <p style={{ textAlign: 'center', fontSize: '13px' }}>
+            React, REST API, Axios, React-Router-Dom, react-loader-spinner,
+            react-slick, react-animations, react-chartjs-2, react-colorful,
+            @tippyjs/react, dotenv, react-transition-group, styled-components,
+            weather-widget, pagination, authorization, accordion, drag'n'drop,
+            timers, counter, todo-list, posts etc.
+          </p> */}
         </div>
         <div className="home-img ">
           <img

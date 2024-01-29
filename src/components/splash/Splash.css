@@ -1,0 +1,58 @@
+.splash-box {
+  background: url(../../images/computers.jpg) no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 1em auto;
+  padding: 100px 0 0;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  opacity: 0.75;
+  transition: opacity 0.25s linear;
+}
+@media screen and (min-width: 1250px) {
+  .splash-box {
+    padding: 300px 0 0;
+  }
+}
+
+.splash-box:hover,
+.splash-box:focus {
+  mix-blend-mode: luminosity;
+}
+
+.splash-box h1 {
+  background-color: #c5eff7;
+  color: #22a7f0;
+  position: relative;
+  bottom: 50px;
+  line-height: 1.5;
+  mix-blend-mode: hard-light;
+}
+@media screen and (min-width: 1250px) {
+  .splash-box h1 {
+    bottom: 150px;
+  }
+}
+
+.splash-box h1:before {
+  content: 'SEARCH IMAGES';
+  color: black;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  mix-blend-mode: multiply;
+  transition: opacity 0.25s linear;
+}
+
+.splash-box:hover h1:before {
+  opacity: 1;
+}
+
+.splash-box:focus h1:before {
+  opacity: 1;
+}

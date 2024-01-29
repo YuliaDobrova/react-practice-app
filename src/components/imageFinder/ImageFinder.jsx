@@ -8,6 +8,7 @@ import MyButton from '../shared/button/MyButton';
 import ImageGallery from '../imageGallery/ImageGallery';
 import ImageSearchbar from '../imageSearchBar/ImageSearchBar';
 import './ImageFinder.css';
+import Splash from '../splash/Splash';
 
 // CLASS COMPONENT for example
 class ImageFinder extends Component {
@@ -34,10 +35,10 @@ class ImageFinder extends Component {
         images: [...prev.images, ...images.hits],
         isLoading: false,
       }));
-      window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: 'smooth',
-      });
+      // window.scrollTo({
+      //   top: document.documentElement.scrollHeight,
+      //   behavior: 'smooth',
+      // });
     }
   }
 
@@ -63,6 +64,8 @@ class ImageFinder extends Component {
   render() {
     return (
       <Container>
+        {this.state.images?.length === 0 && <Splash />}
+
         <ImageSearchbar onChange={this.onInputQuery} />
         <div className="imageGrid">
           <ImageGallery
@@ -70,7 +73,7 @@ class ImageFinder extends Component {
             addLargeImg={this.addLargeImg}
           />
           {this.state.isLoading && <Loader />}
-          {!!this.state.images.length && !this.state.isLoading && (
+          {!!this.state.images?.length && !this.state.isLoading && (
             <MyButton
               style={{
                 width: 150,
