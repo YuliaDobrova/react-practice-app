@@ -18,6 +18,7 @@ import RatingCounter from '../components/ratingCounter/RatingCounter';
 import DateComponent from '../components/date/DateComponent';
 import ResponsivePhrase from '../components/responsivePhrase/ResponsivePhrase';
 import useWindowDimensions from '../hooks/widthHook';
+import Currency from '../components/currency/Currency';
 
 const FunctionalPage = () => {
   const { width } = useWindowDimensions();
@@ -44,8 +45,8 @@ const FunctionalPage = () => {
       )}
       <CommentSlider />
       <hr style={{ margin: 15 }} />
-      <RunningCard />
-      <hr style={{ marginLeft: 15, marginRight: 15, marginTop: 50 }} />
+      <Currency />
+      <hr style={{ margin: 15 }} />
       <Counter />
       <hr style={{ margin: 15 }} />
       <RatingCounter />
@@ -54,18 +55,20 @@ const FunctionalPage = () => {
       <hr style={{ margin: 15 }} />
       <RandomNumber />
       <hr style={{ margin: 15 }} />
-      <TimerBitrhday />
-      <hr style={{ margin: 15 }} />
       <ColorSwitcher />
       <hr style={{ margin: 15 }} />
       <ColorPicker />
       <hr style={{ margin: 15 }} />
+      <RunningCard />
+      <hr style={{ marginLeft: 15, marginRight: 15, marginTop: 50 }} />
       <AccordionItem
         title="Click the accordion below to expand/collapse the accordion content. "
         description="Here could be a secret message... 😊"
       />
       <hr style={{ margin: 15 }} />
       <TippyComponent />
+      <hr style={{ margin: 15 }} />
+      <TimerBitrhday />
     </>
   );
 };

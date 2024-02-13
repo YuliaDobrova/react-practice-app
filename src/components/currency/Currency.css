@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+
+.CurrencyWrapper {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.85))
+    20% 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  /* height: 400px; */
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .CurrencyWrapper {
+    width: 600px;
+    /* height: 400px; */
+  }
+}
+
+.CurrencyTitle {
+  color: #61dafb;
+  font-size: 30px;
+}
+
+.convert {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 25px;
+  color: #ffffff;
+  padding-right: 20px;
+}
+
+.exchange {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 25px;
+  color: #ffffff;
+  /* padding-right: 20px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#original-currency-amount {
+  /* padding-left: 50px; */
+  width: 200px;
+}
+
+.CurrencyBtn {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  /* font-weight: 600;
+  color: #61dafb;
+  background: transparent; */
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.CurrencySelect {
+  width: 80px;
+  height: 35px;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 10px;
+  outline: 0;
+  color: #ffffff;
+}
+
+#exchange {
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+  outline: 0;
+  color: #c5c5c5;
+  border: 4px solid #61dafb;
+}
+
+#exchange:active,
+.CurrencyExchangeBtn:active {
+  transform: scale(0.9);
+}
+
+.CurrencyArrows {
+  font-size: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}
+
+.CurrencyArrows:hover,
+.CurrencyArrows:focus {
+  color: #61dafb;
+}
+
+#output-text {
+  display: none;
+  padding: 20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.CurrencyHelper {
+  color: #61dafb;
+  font-size: 25px;
+}
+
+#exchange-rate {
+  font-size: 24px;
+  /* text-align: center; */
+  cursor: default;
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #61dafb;
+  width: 80px;
+}

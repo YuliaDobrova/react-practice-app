@@ -17,8 +17,6 @@
 .ImageGalleryItem-image:hover {
   transform: scale(1.03);
   cursor: zoom-in;
-
-  /* box-shadow: 2px 2px 7px #ffffff; */
   box-shadow: 0px 0px 7px #61dafb;
 }
 

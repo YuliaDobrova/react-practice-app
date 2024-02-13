@@ -12,6 +12,7 @@
   margin-top: 40px;
   margin: 5px;
   transition: transform 250ms linear;
+  text-align: center;
 }
 .myInput::placeholder {
   color: #ffffff;
