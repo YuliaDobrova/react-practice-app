@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap'); */
 
 .CurrencyWrapper {
   margin: auto;
@@ -31,14 +31,14 @@
 }
 
 .convert {
-  font-family: 'Sansita Swashed', cursive;
+  /* font-family: 'Sansita Swashed', cursive; */
   font-size: 25px;
   color: #ffffff;
   padding-right: 20px;
 }
 
 .exchange {
-  font-family: 'Sansita Swashed', cursive;
+  /* font-family: 'Sansita Swashed', cursive; */
   font-size: 25px;
   color: #ffffff;
   /* padding-right: 20px; */
@@ -52,13 +52,13 @@
 }
 
 .CurrencyBtn {
+  /* font-family: 'Sansita Swashed', cursive; */
   width: 300px;
   height: 40px;
   font-size: 20px;
   /* font-weight: 600;
   color: #61dafb;
   background: transparent; */
-  font-family: 'Sansita Swashed', cursive;
 }
 
 .CurrencySelect {

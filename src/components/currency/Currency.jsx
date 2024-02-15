@@ -10,7 +10,6 @@ const Currency = () => {
   const from_currency = document.getElementById('from_currency');
   const to_currency = document.getElementById('to_currency');
   const exchange_rate = document.getElementById('exchange-rate');
-  const exchange = document.getElementById('exchange');
   const output_amount = document.getElementById('output-text');
   const output_from = document.getElementById('from');
   const output_to = document.getElementById('to');
@@ -23,15 +22,8 @@ const Currency = () => {
     calculate();
   };
 
-  // exchange.addEventListener("click",()=>{
-  //     [from_currency.value, to_currency.value] = [to_currency.value, from_currency.value];
-  //     calculate();
-  // })
-
   let to_amount = 0;
   function calculate() {
-    console.log('from_currency', from_currency);
-    console.log('to_currency', to_currency);
     const from_currency_value =
       from_currency.value !== null ? from_currency.value : 'CAD';
     const to_currency_value = to_currency.value;
@@ -52,13 +44,9 @@ const Currency = () => {
     calculate();
   };
 
-  // const onInputChange = (e) => {
-  //   setAmount(e.)
-  // };
-
-  // document.getElementById('exchange_button').addEventListener('click', () => {
-  //   calculate();
-  // });
+  const onInputChange = event => {
+    setAmount(event.target.value);
+  };
 
   return (
     <div className="CurrencyWrapper">
@@ -71,9 +59,7 @@ const Currency = () => {
           id="original-currency-amount"
           placeholder="Enter Amount"
           value={amount}
-          onChange={event => {
-            setAmount(event.target.value);
-          }}
+          onChange={onInputChange}
         />
       </p>
       <div>
