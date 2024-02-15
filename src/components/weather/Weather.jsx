@@ -73,7 +73,7 @@ const Weather = () => {
           </div>
           <div className="weather__icon">
             <img
-              src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}
+              src={`https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}
               alt={weatherData.weather[0].main}
             />
           </div>
