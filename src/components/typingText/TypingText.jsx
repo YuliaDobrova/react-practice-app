@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from '../../components/shared/modal/Modal';
 import photo from '../../images/Yulia.png';
 import goit from '../../images/goit.png';
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 //to install react-typed used this: npm i react-typed --legacy-peer-deps
 import './TypingText.css';
 
@@ -14,17 +14,17 @@ const TypingText = () => {
       <div className="home-info-wrapper">
         <div className="home-info">
           <h4 className="hello">
-            Hello, my name is <span className="name">Yuliia Dobrova</span>
+            Hello, my name is <span className="name">Yuliia</span>
           </h4>
-          <h5 className="my-profession">
-            I'm a{' '}
-            <span className="typing">
-              {/* ===========Typing-annimation================ */}
+          <h5 className="typing">
+            I am a Software Developer
+            {/* ===========Typing-annimation================ */}
+            {/* <span className="typing">
               <Typed
                 strings={[
                   'Software Developer',
                   'Software Engineer',
-                  'Full-stack Developer',
+                  'Full-Stack Developer',
                   'Web Developer',
                   'Javascript Developer',
                   'Front-end Developer',
@@ -34,7 +34,7 @@ const TypingText = () => {
                 backSpeed={50}
                 loop
               />
-            </span>
+            </span> */}
           </h5>
           <p className="home-info-text">
             I'm delighted to welcome you to my{' '}
