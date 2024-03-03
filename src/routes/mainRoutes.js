@@ -1,6 +1,5 @@
 import HomePage from '../pages/HomePage';
 import PostsPage from '../pages/PostsPage';
-import QueryPage from '../pages/QueryPage';
 import ChartsPage from '../pages/ChartsPage';
 import TodoPage from '../pages/TodoPage';
 import FunctionalPage from '../pages/FunctionalPage';
@@ -9,6 +8,7 @@ import LoginPage from '../pages/LoginPage';
 import ImagesPage from '../pages/ImagesPage';
 import BoardPage from '../pages/BoardPage';
 import ProjectsPage from '../pages/ProjectsPage';
+import NoPage from '../pages/NoPage';
 
 export const privateMainRoutes = [
   {
@@ -37,16 +37,6 @@ export const privateMainRoutes = [
     element: <PostsPage />,
   },
   {
-    name: 'Query',
-    path: '/query',
-    element: <QueryPage />,
-  },
-  {
-    name: 'Board',
-    path: '/board',
-    element: <BoardPage />,
-  },
-  {
     name: 'Images',
     path: '/images',
     element: <ImagesPage />,
@@ -60,6 +50,11 @@ export const privateMainRoutes = [
     name: 'Contacts',
     path: '/contacts',
     element: <ContactsPage />,
+  },
+  {
+    name: 'NoPage',
+    path: '*',
+    element: <NoPage />,
   },
 ];
 export const publicMainRoutes = [
@@ -99,15 +94,9 @@ export const publicMainRoutes = [
     element: <ChartsPage />,
   },
   {
-    name: 'Query',
-    path: '/query',
-    element: <QueryPage />,
-  },
-
-  {
-    name: 'Board',
-    path: '/board',
-    element: <BoardPage />,
+    name: 'NoPage',
+    path: '*',
+    element: <NoPage />,
   },
 
   // {

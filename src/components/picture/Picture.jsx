@@ -1,8 +1,7 @@
 import React from 'react';
-import splash from '../../images/water-splash.png';
-import './Splash.css';
+import './Picture.css';
 
-const Splash = () => {
+const Picture = () => {
   return (
     <>
       <div className="splash-box">
@@ -12,4 +11,4 @@ const Splash = () => {
   );
 };
 
-export default Splash;
+export default Picture;

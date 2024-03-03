@@ -6,28 +6,28 @@ import Header from './components/header/Header';
 import BackToTop from './components/backToTop/BackToTop';
 import Main from './components/main/Main';
 import Footer from './components/footer/Footer';
-import { ThemeProvider } from '@mui/material';
-import { createTheme } from '@mui/material/styles';
+// import { ThemeProvider } from '@mui/material';
+// import { createTheme } from '@mui/material/styles';
 import './App.css';
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-const theme = createTheme({
-    palette: {
-      primary: {
-        main: '#61dafb',
-      },
-      secondary: {
-        main: '#ffffff',
-      },
-    },
-    typography: {
-      fontFamily: 'Open Sans',
-    },
-    
-  });
+  // const theme = createTheme({
+  //     palette: {
+  //       primary: {
+  //         main: '#61dafb',
+  //       },
+  //       secondary: {
+  //         main: '#ffffff',
+  //       },
+  //     },
+  //     typography: {
+  //       fontFamily: 'Open Sans',
+  //     },
+
+  //   });
 
   useEffect(() => {
     if (localStorage.getItem('auth')) {
@@ -52,7 +52,7 @@ const theme = createTheme({
   return (
     <>
       <AuthContext.Provider value={{ isAuth, setIsAuth, isLoading }}>
-           <ThemeProvider theme={theme}>
+        {/* <ThemeProvider theme={theme}> */}
         <BrowserRouter>
           <Header />
           <div className="AppWrapper">
@@ -61,7 +61,7 @@ const theme = createTheme({
           </div>
           <Footer />
         </BrowserRouter>
-           </ThemeProvider>
+        {/* </ThemeProvider> */}
       </AuthContext.Provider>
     </>
   );

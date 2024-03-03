@@ -8,10 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
   overflow-x: hidden;
-  /* padding: 10px; */
   background-color: #282c34;
-  /* background-image: url(./images/galaxy-bg.jpg); */
-  /* background-image: url(./images/stars-sky.png); */
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.5),
@@ -20,7 +17,6 @@ body {
     url(./images/stars-sky.png);
   background-position: center;
   background-repeat: repeat;
-  /* background-size: cover; */
   background-size: contain;
 }
 

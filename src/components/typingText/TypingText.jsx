@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Modal from '../../components/shared/modal/Modal';
 import photo from '../../images/Yulia.png';
 import goit from '../../images/goit.png';
-// import epam from '../../images/epam.png';
 import Typed from 'react-typed';
 //to install react-typed used this: npm i react-typed --legacy-peer-deps
 import './TypingText.css';
@@ -23,13 +22,13 @@ const TypingText = () => {
               {/* ===========Typing-annimation================ */}
               <Typed
                 strings={[
-                  'Software Engineer',
-                  'Front-end Developer',
                   'Software Developer',
+                  'Software Engineer',
+                  'Full-stack Developer',
                   'Web Developer',
                   'Javascript Developer',
+                  'Front-end Developer',
                   'React Developer',
-                  'Full-stack Developer',
                 ]}
                 typeSpeed={40}
                 backSpeed={50}
@@ -71,15 +70,6 @@ const TypingText = () => {
             </a>{' '}
             Page
           </p>
-
-          {/* <br />
-          <p style={{ textAlign: 'center', fontSize: '13px' }}>
-            React, REST API, Axios, React-Router-Dom, react-loader-spinner,
-            react-slick, react-animations, react-chartjs-2, react-colorful,
-            @tippyjs/react, dotenv, react-transition-group, styled-components,
-            weather-widget, pagination, authorization, accordion, drag'n'drop,
-            timers, counter, todo-list, posts etc.
-          </p> */}
         </div>
         <div className="home-img ">
           <img

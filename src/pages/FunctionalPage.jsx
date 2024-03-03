@@ -1,13 +1,11 @@
 import React from 'react';
 // import CircleLoader from '../components/circleLoader';
-// import RadioButton from '../components/radioButton/RadioButton';
 import PhotoList from '../components/photoList';
 import AccordionItem from '../components/accordionItem/AccordionItem';
 import DragAndDrop from '../components/dragAndDrop';
 import CommentSlider from '../components/commentSlider/CommentSlider';
 import Counter from '../components/counter/Counter';
 import Timer from '../components/timer/Timer';
-import TimerBitrhday from '../components/timerBirthday/TimerBitrhday';
 import ColorSwitcher from '../components/colorSwitcher/ColorSwitcher';
 import ColorPicker from '../components/colorPicker/ColorPicker';
 import TippyComponent from '../components/tippy/Tippy';
@@ -19,6 +17,7 @@ import DateComponent from '../components/date/DateComponent';
 import ResponsivePhrase from '../components/responsivePhrase/ResponsivePhrase';
 import useWindowDimensions from '../hooks/widthHook';
 import Currency from '../components/currency/Currency';
+import NewYearTimer from '../components/newYearTimer/TimerBitrhday';
 
 const FunctionalPage = () => {
   const { width } = useWindowDimensions();
@@ -68,7 +67,7 @@ const FunctionalPage = () => {
       <hr style={{ margin: 15 }} />
       <TippyComponent />
       <hr style={{ margin: 15 }} />
-      <TimerBitrhday />
+      <NewYearTimer />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const TimerBitrhday = () => {
+const NewYearTimer = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const TimerBitrhday = () => {
     let year = new Date().getFullYear();
 
     // console.log('year', year);
-    const difference = Number(new Date(`02/17/${year}`) - Number(new Date()));
+    const difference = Number(new Date(`12/31/${year}`) - Number(new Date()));
     // const difference = Number(new Date(`01/01/${year}`) - Number(new Date()));
     // console.log('difference', difference);
     let timeLeft = {};
@@ -47,12 +47,11 @@ const TimerBitrhday = () => {
   return (
     <div style={{ textAlign: 'center' }}>
       <h3 style={{ letterSpacing: '0.03em', marginBottom: 5 }}>
-        Birthday Timer
+        New Year Timer
         {/* New Year's Timer */}
       </h3>
       <p>
-        Soon there will be my BDay <br />
-        {/* Time left till the New 2023 Year <br /> */}
+        Time left till the New Year <br />
         🎉🥳✨
       </p>
       {timerComponents?.length ? timerComponents : <span>Happy Birthday!</span>}
@@ -60,4 +59,4 @@ const TimerBitrhday = () => {
   );
 };
 
-export default TimerBitrhday;
+export default NewYearTimer;
