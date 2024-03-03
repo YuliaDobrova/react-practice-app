@@ -12,16 +12,16 @@ const LoginPage = () => {
     localStorage.setItem('auth', 'true');
   };
 
-  // useEffect(() => {
-  //   if (localStorage.getItem('auth')) {
-  //     setIsAuth('true');
-  //     localStorage.setItem('auth', 'true');
-  //   }
-  // }, []);
-
   return (
     <div>
-      <h1>Login Page</h1>
+      <h1 style={{ marginTop: 10, marginBottom: 10, textAlign: 'center' }}>
+        Login Page
+      </h1>
+      <p style={{ marginTop: 10, marginBottom: 10, textAlign: 'center' }}>
+        This page was created to test Authorization & Private routes. <br />{' '}
+        Enter whatever you want in LOGIN and PASSWORD fields and get the access
+        to private routes and API widgets.
+      </p>
       <form onSubmit={login}>
         <MyInput type="text" placeholder="Enter login" />
         <MyInput type="password" placeholder="Enter password" />

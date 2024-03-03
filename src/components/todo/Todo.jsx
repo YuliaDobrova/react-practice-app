@@ -14,7 +14,11 @@ const Todo = () => {
       completed: true,
     },
     {
-      text: 'Work as a Frontend Developer for 3 years',
+      text: 'Work as a Software Developer with a team',
+      completed: true,
+    },
+    {
+      text: 'Get familliar with basics of Node.js',
       completed: true,
     },
     {

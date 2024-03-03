@@ -1,5 +1,4 @@
 import React from 'react';
-// import CircleLoader from '../components/circleLoader';
 import PhotoList from '../components/photoList';
 import AccordionItem from '../components/accordionItem/AccordionItem';
 import DragAndDrop from '../components/dragAndDrop';
@@ -27,13 +26,6 @@ const FunctionalPage = () => {
       <hr style={{ margin: 15 }} />
       <DateComponent />
       <hr style={{ margin: 15 }} />
-      {/* <CircleLoader />
-      <hr style={{ margin: 15 }} /> */}
-      <p style={{ textAlign: 'center', marginBottom: 20 }}>
-        <b>Weather widget</b>
-      </p>
-      <Weather />
-      <hr style={{ margin: 15 }} />
       <PhotoList />
       <hr style={{ margin: 15 }} />
       {width >= 1100 && (
@@ -43,8 +35,6 @@ const FunctionalPage = () => {
         </>
       )}
       <CommentSlider />
-      <hr style={{ margin: 15 }} />
-      <Currency />
       <hr style={{ margin: 15 }} />
       <Counter />
       <hr style={{ margin: 15 }} />

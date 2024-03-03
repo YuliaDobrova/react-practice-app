@@ -3,12 +3,12 @@ import PostsPage from '../pages/PostsPage';
 import ChartsPage from '../pages/ChartsPage';
 import TodoPage from '../pages/TodoPage';
 import FunctionalPage from '../pages/FunctionalPage';
-import ContactsPage from '../pages/ContactsPage';
 import LoginPage from '../pages/LoginPage';
 import ImagesPage from '../pages/ImagesPage';
-import BoardPage from '../pages/BoardPage';
 import ProjectsPage from '../pages/ProjectsPage';
 import NoPage from '../pages/NoPage';
+import WeatherPage from '../pages/WeatherPage';
+import CurrencyPage from '../pages/CurrencyPage';
 
 export const privateMainRoutes = [
   {
@@ -17,14 +17,14 @@ export const privateMainRoutes = [
     element: <HomePage />,
   },
   {
-    name: 'Projects',
-    path: '/projects',
-    element: <ProjectsPage />,
+    name: 'Weather',
+    path: '/weather',
+    element: <WeatherPage />,
   },
   {
-    name: 'Functional',
-    path: '/functional',
-    element: <FunctionalPage />,
+    name: 'Currency',
+    path: '/currency',
+    element: <CurrencyPage />,
   },
   {
     name: 'Charts',
@@ -45,11 +45,6 @@ export const privateMainRoutes = [
     name: 'Todo',
     path: '/todo',
     element: <TodoPage />,
-  },
-  {
-    name: 'Contacts',
-    path: '/contacts',
-    element: <ContactsPage />,
   },
   {
     name: 'NoPage',
@@ -99,9 +94,9 @@ export const publicMainRoutes = [
     element: <NoPage />,
   },
 
-  // {
-  //   name: 'Login',
-  //   path: '/login',
-  //   element: <LoginPage />,
-  // },
+  {
+    name: 'Login',
+    path: '/login',
+    element: <LoginPage />,
+  },
 ];

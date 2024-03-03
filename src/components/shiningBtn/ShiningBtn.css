@@ -2,28 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
 }
-
-/* a {
-  font-size: 1.5rem;
-  padding: 1rem 3rem;
-  color: #f4f4f4;
-  text-transform: uppercase;
-} */
 
 .shining-btn {
   font-size: 1rem;
   padding: 1rem 1rem;
   color: #61dafb;
   background-color: rgba(139, 152, 178, 0.5);
-  /* border: 1px solid rgb(146, 148, 248); */
   border: 1px solid transparent;
   border-radius: 38px;
   cursor: pointer;
-
-  /* text-transform: uppercase; */
-
   text-decoration: none;
   position: relative;
   overflow: hidden;
@@ -43,7 +31,7 @@
   background: linear-gradient(
     120deg,
     transparent,
-    /* rgba(146, 148, 248, 0.4), */ rgba(146, 218, 248, 0.4),
+    rgba(146, 218, 248, 0.4),
     transparent
   );
   transition: all 650ms;

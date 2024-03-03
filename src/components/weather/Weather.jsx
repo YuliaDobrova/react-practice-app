@@ -14,36 +14,14 @@ const Weather = () => {
   const [weatherData, setWeatherData] = useState(defaultWeather);
   const [dataQuery, setDataQuery] = useState('Vancouver');
 
-  // const dataQuerryArray = ['Kyiv', 'Paris', 'London'];
-
-  // setInterval(() => {
-  //   console.log('setInterval')
-  //   setTimeout(() => querryCycle0(), 4000);
-  //   setTimeout(() => querryCycle1(), 8000);
-  //   setTimeout(() => querryCycle2(), 12000);
-  //   clearInterval();
-  // }, 10000);
-
-  // function querryCycle0() {
-  //   setDataQuery(dataQuerryArray[0]);
-  // }
-  // function querryCycle1() {
-  //   setDataQuery(dataQuerryArray[1]);
-  // }
-  // function querryCycle2() {
-  //   setDataQuery(dataQuerryArray[2]);
-  // }
-
   async function getWeatherData() {
     try {
       setIsLoading(true);
       await getWeatherForecast(dataQuery).then(response => {
-        // console.log('response', response);
         setWeatherData({ ...response });
       });
       setIsLoading(false);
     } catch (e) {
-      // console.log(e);
       setIsLoading(false);
     }
   }
@@ -52,17 +30,9 @@ const Weather = () => {
     getWeatherData();
   }, []);
 
-  //   const handleSubmit = (e) =>{
-  // const inputValue = e.target.value;
-  // console.log('inputValue', inputValue)
-  // setDataQuery(inputValue)
-  //   }
-
-  // console.log('weatherData', weatherData);
   return (
     <>
       {isloading && <Loader />}
-      {/* <input onSubmit={handleSubmit}/> */}
       <div id="weather" className="weather">
         <div className="weather__city-name">{weatherData.name}</div>
         <div className="weather__header">
