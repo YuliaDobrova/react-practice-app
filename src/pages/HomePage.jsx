@@ -7,8 +7,7 @@ import TypingText from '../components/typingText/TypingText';
 import { AuthContext } from '../components/context';
 
 const HomePage = () => {
-  const [modalPhotoActive, setModalPhotoActive] = useState(false);
-  const { isAuth, setIsAuth } = useContext(AuthContext);
+  const { isAuth } = useContext(AuthContext);
 
   return (
     <>

@@ -12,10 +12,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (localStorage.getItem('auth')) {
-      setIsAuth('true');
-      localStorage.setItem('auth', 'true');
-    }
+    localStorage.setItem('auth', 'false');
+    setIsAuth(false);
     setIsLoading(false);
   }, []);
 

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useMedia } from 'react-use';
 
+import { AuthContext } from '../components/context';
 import PostService from '../API/PostService';
 import PostFilter from '../components/postFilter/PostFilter';
 import PostForm from '../components/postForm/PostForm';
@@ -55,54 +56,72 @@ const Posts = () => {
 
   const isWide = useMedia('(min-width: 768px)');
 
+  const { isAuth } = useContext(AuthContext);
+
   return (
-    <div className="PostWrapper">
-      {isWide && (
-        <>
-          <PostForm create={createPost} />
-          <hr style={{ margin: 15 }} />{' '}
-        </>
-      )}
-      <PostFilter filter={filter} setFilter={setFilter} />
-      <MySelect
-        value={limit}
-        onChange={value => setLimit(value)}
-        defaultValue="Number of posts on a page"
-        options={[
-          { value: 5, name: '5' },
-          { value: 10, name: '10' },
-          { value: 20, name: '20' },
-          { value: 100, name: 'Show all' },
-        ]}
-      />
-      <hr style={{ margin: 15 }} />
-      <MyButton
-        style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
-        onClick={() => {
-          setModalFormActive(true);
-        }}
-      >
-        Add New Post
-      </MyButton>
-      <hr style={{ margin: 15 }} />
-      {postError && <h1>Error:${postError}</h1>}
-      {isPostsLoading ? (
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Loader />
+    <>
+      {isAuth ? (
+        <div className="PostWrapper">
+          {isWide && (
+            <>
+              <PostForm create={createPost} />
+              <hr style={{ margin: 15 }} />{' '}
+            </>
+          )}
+          <PostFilter filter={filter} setFilter={setFilter} />
+          <MySelect
+            value={limit}
+            onChange={value => setLimit(value)}
+            defaultValue="Number of posts on a page"
+            options={[
+              { value: 5, name: '5' },
+              { value: 10, name: '10' },
+              { value: 20, name: '20' },
+              { value: 100, name: 'Show all' },
+            ]}
+          />
+          <hr style={{ margin: 15 }} />
+          <MyButton
+            style={{
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+            onClick={() => {
+              setModalFormActive(true);
+            }}
+          >
+            Add New Post
+          </MyButton>
+          <hr style={{ margin: 15 }} />
+          {postError && <h1>Error:${postError}</h1>}
+          {isPostsLoading ? (
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <Loader />
+            </div>
+          ) : (
+            <PostList
+              remove={removePost}
+              posts={sortedAndSearchedPosts}
+              title="Post List"
+            />
+          )}
+          <Pagination
+            page={page}
+            changePage={changePage}
+            totalPages={totalPages}
+          />
+
+          <Modal active={modalFormActive} setActive={setModalFormActive}>
+            <PostForm create={createPost} />
+          </Modal>
         </div>
       ) : (
-        <PostList
-          remove={removePost}
-          posts={sortedAndSearchedPosts}
-          title="Post List"
-        />
+        <p style={{ textAlign: 'center' }}>
+          User is NOT autorized. <br /> Go to the API page.
+        </p>
       )}
-      <Pagination page={page} changePage={changePage} totalPages={totalPages} />
-
-      <Modal active={modalFormActive} setActive={setModalFormActive}>
-        <PostForm create={createPost} />
-      </Modal>
-    </div>
+    </>
   );
 };
 
