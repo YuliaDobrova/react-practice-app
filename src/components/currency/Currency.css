@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap'); */
-
 .CurrencyWrapper {
   margin: auto;
   padding: 0;
@@ -13,7 +11,6 @@
   justify-content: center;
   flex-direction: column;
   width: 300px;
-  /* height: 400px; */
   max-width: 600px;
   border-radius: 20px;
   padding: 10px;
@@ -21,44 +18,35 @@
 @media screen and (min-width: 768px) {
   .CurrencyWrapper {
     width: 600px;
-    /* height: 400px; */
   }
 }
 
 .CurrencyTitle {
   color: #61dafb;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .convert {
-  /* font-family: 'Sansita Swashed', cursive; */
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
   padding-right: 20px;
 }
 
 .exchange {
-  /* font-family: 'Sansita Swashed', cursive; */
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
-  /* padding-right: 20px; */
   margin-left: auto;
   margin-right: auto;
 }
 
 #original-currency-amount {
-  /* padding-left: 50px; */
   width: 200px;
 }
 
 .CurrencyBtn {
-  /* font-family: 'Sansita Swashed', cursive; */
   width: 300px;
   height: 40px;
   font-size: 20px;
-  /* font-weight: 600;
-  color: #61dafb;
-  background: transparent; */
 }
 
 .CurrencySelect {
@@ -106,12 +94,11 @@
 
 .CurrencyHelper {
   color: #61dafb;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #exchange-rate {
   font-size: 24px;
-  /* text-align: center; */
   cursor: default;
   background: transparent;
   color: #ffffff;

@@ -9,13 +9,11 @@ import ColorSwitcher from '../components/colorSwitcher/ColorSwitcher';
 import ColorPicker from '../components/colorPicker/ColorPicker';
 import TippyComponent from '../components/tippy/Tippy';
 import RunningCard from '../components/RunningCard/RunningCard';
-import Weather from '../components/weather/Weather';
 import RandomNumber from '../components/randomNumber/RandomNumber';
 import RatingCounter from '../components/ratingCounter/RatingCounter';
 import DateComponent from '../components/date/DateComponent';
 import ResponsivePhrase from '../components/responsivePhrase/ResponsivePhrase';
 import useWindowDimensions from '../hooks/widthHook';
-import Currency from '../components/currency/Currency';
 import NewYearTimer from '../components/newYearTimer/TimerBitrhday';
 
 const FunctionalPage = () => {

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 import {
   headerPrivateRoutes,
@@ -11,10 +11,12 @@ import './Navigation.css';
 
 const Navigation = () => {
   const { isAuth, setIsAuth } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const logout = () => {
     setIsAuth(false);
     localStorage.removeItem('auth');
+    navigate('/');
   };
 
   return isAuth ? (

@@ -50,7 +50,7 @@ const Currency = () => {
 
   return (
     <div className="CurrencyWrapper">
-      <h1 className="CurrencyTitle">Currency Converter</h1>
+      <h2 className="CurrencyTitle">Currency Converter</h2>
       <p className="convert">
         Convert :
         <MyInput
