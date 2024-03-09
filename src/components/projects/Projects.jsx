@@ -10,6 +10,8 @@ import event from '../../images/project-img-event.png';
 import icecream from '../../images/project-img-icecream.png';
 import marsden from '../../images/project-img-marsden.png';
 import starwars from '../../images/project-img-starwars.png';
+import aimgame from '../../images/project-img-aimgame.png';
+import bookshop from '../../images/project-img-bookshop.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -25,7 +27,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://yuliadobrova.github.io/my-resume/"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -37,7 +39,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://github.com/YuliaDobrova/my-resume"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -58,8 +60,8 @@ const Projects = () => {
             <div>
               <a
                 className="project-link"
-                href="https://dental-center-beige.vercel.app/"
-                target="_black"
+                href="https://krolyk-dental-center.vercel.app/"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -71,7 +73,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://github.com/YuliaDobrova/dental-center"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -93,7 +95,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://www.wizwork.net/"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -123,7 +125,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="http://scott-marsden.netlify.app"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -135,7 +137,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://github.com/YuliaDobrova/marsden-website"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -157,7 +159,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://dobrova-yulia-movie.netlify.app/"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -169,7 +171,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://github.com/YuliaDobrova/movie-search-app"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -191,7 +193,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://star-wars-lord.netlify.app/"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -203,7 +205,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://github.com/YuliaDobrova/star-wars"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -225,7 +227,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://yuliadobrova.github.io/team-project-html-css/"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -237,7 +239,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://github.com/YuliaDobrova/team-project-html-css"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -259,7 +261,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://yuliadobrova.github.io/team-project-js/"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -271,7 +273,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://github.com/YuliaDobrova/team-project-js"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -293,7 +295,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://fortune-magic-ball.netlify.app"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -305,7 +307,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://github.com/YuliaDobrova/magic-ball"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -327,7 +329,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://magic-boards.netlify.app/"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -339,7 +341,7 @@ const Projects = () => {
               <a
                 className="project-link"
                 href="https://github.com/YuliaDobrova/magic-boards"
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg className="project-icon" width="30" height="30">
@@ -351,6 +353,74 @@ const Projects = () => {
             </div>
           </div>
           <img src={boards} alt="boards" />
+        </div>
+
+        {/* AIM GAME */}
+        <div className="project-card">
+          <div className="project-card-disc">
+            <h1 className="project-card-title">Aim Game</h1>
+            <div>
+              <a
+                className="project-link"
+                href="https://aim-game-circles.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-link'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Project</span>
+              </a>
+              <a
+                className="project-link"
+                href="https://github.com/YuliaDobrova/aim-game"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-github'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Code</span>
+              </a>
+            </div>
+          </div>
+          <img src={aimgame} alt="aimgame" />
+        </div>
+
+        {/* BOOK SHOP */}
+        <div className="project-card">
+          <div className="project-card-disc">
+            <h1 className="project-card-title">Book Shop</h1>
+            <div>
+              <a
+                className="project-link"
+                href="https://mui-react-practice-app.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-link'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Project</span>
+              </a>
+              <a
+                className="project-link"
+                href="https://github.com/YuliaDobrova/mui-react-practice-app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-github'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Code</span>
+              </a>
+            </div>
+          </div>
+          <img src={bookshop} alt="bookshop" />
         </div>
       </div>
     </>
