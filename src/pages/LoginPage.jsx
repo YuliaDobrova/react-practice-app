@@ -23,7 +23,10 @@ const LoginPage = () => {
       <p style={{ marginTop: 10, marginBottom: 10, textAlign: 'center' }}>
         This page was created to test Authorization & Private routes. <br />{' '}
         Enter whatever you want in LOGIN and PASSWORD fields and get the access
-        to private routes and API widgets.
+        to private routes and API widgets:{' '}
+        <strong>
+          Weather Widget, Currency Converter, Image Search, Posts API.
+        </strong>
       </p>
       <form onSubmit={login}>
         <MyInput type="text" placeholder="Enter login" />

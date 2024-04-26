@@ -12,6 +12,8 @@ import marsden from '../../images/project-img-marsden.png';
 import starwars from '../../images/project-img-starwars.png';
 import aimgame from '../../images/project-img-aimgame.png';
 import bookshop from '../../images/project-img-bookshop.png';
+import renovation from '../../images/project-img-renovation.jpeg';
+import engineering from '../../images/project-img-AMwebsite.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -26,7 +28,7 @@ const Projects = () => {
             <div>
               <a
                 className="project-link"
-                href="https://yuliadobrova.github.io/my-resume/"
+                href="https://yuliiadobrova-resume.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -38,7 +40,7 @@ const Projects = () => {
               </a>
               <a
                 className="project-link"
-                href="https://github.com/YuliaDobrova/my-resume"
+                href="https://github.com/YuliaDobrova/yuliiadobrova-resume"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -117,7 +119,7 @@ const Projects = () => {
           <img src={wizwork} alt="wizwork" />
         </div>
 
-        {/* SCOTT */}
+        {/* MARSDEN WEBSITE */}
         <div className="project-card">
           <div className="project-card-disc">
             <h1 className="project-card-title">Personal Website</h1>
@@ -185,14 +187,14 @@ const Projects = () => {
           <img src={movie} alt="movie" />
         </div>
 
-        {/* STAR WARS */}
+        {/* RENOVATION */}
         <div className="project-card">
           <div className="project-card-disc">
-            <h1 className="project-card-title">Star Wars</h1>
+            <h1 className="project-card-title">Renovation Company</h1>
             <div>
               <a
                 className="project-link"
-                href="https://star-wars-lord.netlify.app/"
+                href="https://renovation-company.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -204,7 +206,7 @@ const Projects = () => {
               </a>
               <a
                 className="project-link"
-                href="https://github.com/YuliaDobrova/star-wars"
+                href="https://github.com/YuliaDobrova/renovation-company"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -216,7 +218,7 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <img src={starwars} alt="starwars" />
+          <img src={renovation} alt="renovation" />
         </div>
 
         {/* ICE CREAM */}
@@ -251,6 +253,40 @@ const Projects = () => {
             </div>
           </div>
           <img src={icecream} alt="icecream" />
+        </div>
+
+        {/* STAR WARS */}
+        <div className="project-card">
+          <div className="project-card-disc">
+            <h1 className="project-card-title">Star Wars</h1>
+            <div>
+              <a
+                className="project-link"
+                href="https://star-wars-lord.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-link'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Project</span>
+              </a>
+              <a
+                className="project-link"
+                href="https://github.com/YuliaDobrova/star-wars"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-github'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Code</span>
+              </a>
+            </div>
+          </div>
+          <img src={starwars} alt="starwars" />
         </div>
 
         {/* EVENT BOOSTER */}
@@ -421,6 +457,36 @@ const Projects = () => {
             </div>
           </div>
           <img src={bookshop} alt="bookshop" />
+        </div>
+
+        {/* AM */}
+        <div className="project-card">
+          <div className="project-card-disc">
+            <h1 className="project-card-title">Engineering Company</h1>
+            <div>
+              <a
+                className="project-link"
+                href="https://avtomagistral.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-link'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Project</span>
+              </a>
+              <span href="" className="project-link">
+                <span className="project-link-text nolink">
+                  Link to the Code
+                </span>
+                <span className="project-link-text nolink">
+                  cannot be shared
+                </span>
+              </span>
+            </div>
+          </div>
+          <img src={engineering} alt="engineering" />
         </div>
       </div>
     </>

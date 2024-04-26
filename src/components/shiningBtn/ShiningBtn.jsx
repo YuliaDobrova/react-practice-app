@@ -5,7 +5,7 @@ const ShiningBtn = () => {
   return (
     <div className="shining-btn-container">
       <a
-        href="https://yuliadobrova.github.io/my-resume/"
+        href="https://yuliiadobrova-resume.vercel.app/"
         className="shining-btn"
         target="_blank"
       >
