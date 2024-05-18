@@ -9,7 +9,7 @@ const ShiningBtn = () => {
         className="shining-btn"
         target="_blank"
       >
-        → <b>Check out my CV</b>
+        → <b>Check out my Web Page</b>
       </a>
     </div>
   );

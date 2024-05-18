@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import EarthAnimation from '../components/earthAnimation/EarthAnimation';
 import Hero from '../components/hero/Hero';
 import Title from '../components/title/Title';
+import MyButton from '../components/shared/button/MyButton';
 import ShiningBtn from '../components/shiningBtn/ShiningBtn';
 import TypingText from '../components/typingText/TypingText';
 import { AuthContext } from '../components/context';
