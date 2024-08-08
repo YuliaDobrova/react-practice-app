@@ -90,13 +90,14 @@ export const HeroStyled = styled.div`
     animation-timing-function: linear;
 
     @keyframes rocketScale {
-      from {
+      0% {
         transform: scale(0.75);
-        /* transform: rotate(45deg); */
       }
-      to {
+      50% {
         transform: scale(1);
-        /* transform: rotate(45deg); */
+      }
+      100% {
+        transform: scale(0.75);
       }
     }
 

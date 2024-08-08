@@ -1,8 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import EarthAnimation from '../components/earthAnimation/EarthAnimation';
 import Hero from '../components/hero/Hero';
 import Title from '../components/title/Title';
-import MyButton from '../components/shared/button/MyButton';
 import ShiningBtn from '../components/shiningBtn/ShiningBtn';
 import TypingText from '../components/typingText/TypingText';
 import { AuthContext } from '../components/context';
@@ -50,6 +49,7 @@ const HomePage = () => {
               <a
                 href="https://github.com/YuliaDobrova/react-practice-app"
                 target="_blank"
+                rel="noreferrer"
                 style={{ textDecoration: 'underline', color: '#61dafb' }}
               >
                 GitHub

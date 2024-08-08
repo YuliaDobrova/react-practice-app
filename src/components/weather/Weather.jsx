@@ -1,24 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { getWeatherForecast } from '../../services/WeatherService';
 import Loader from '../shared/loader/Loader';
+import MyInput from '../shared/input/MyInput';
+import MyButton from '../shared/button/MyButton';
 import './Weather.css';
 
 const defaultWeather = {
-  name: 'Kyiv',
+  name: 'Vancouver',
   weather: [{ main: 'Clouds', icon: '04d' }],
-  main: { temp: 19.0, feels_like: 17.0 },
+  main: {
+    feels_like: 28.26,
+    grnd_level: 1005,
+    humidity: 61,
+    pressure: 1013,
+    sea_level: 1013,
+    temp: 27.08,
+    temp_max: 30.16,
+    temp_min: 23.46,
+  },
 };
 
 const Weather = () => {
   const [isloading, setIsLoading] = useState(false);
   const [weatherData, setWeatherData] = useState(defaultWeather);
-  const [dataQuery, setDataQuery] = useState('Vancouver');
+  const [dataQuery, setDataQuery] = useState('');
 
   async function getWeatherData() {
     try {
       setIsLoading(true);
       await getWeatherForecast(dataQuery).then(response => {
         setWeatherData({ ...response });
+        console.log('response', response);
       });
       setIsLoading(false);
     } catch (e) {
@@ -30,9 +42,25 @@ const Weather = () => {
     getWeatherData();
   }, []);
 
+  const onInputChange = e => {
+    setDataQuery(e.target.value);
+  };
+  const onInputSubmit = () => {
+    getWeatherData();
+  };
+
   return (
     <>
       {isloading && <Loader />}
+      <div className="weatherInputWrapper">
+        <MyInput
+          value={dataQuery}
+          placeholder="Enter city name"
+          onChange={onInputChange}
+        />
+        <MyButton onClick={onInputSubmit}>Get weather forecast</MyButton>
+      </div>
+
       <div id="weather" className="weather">
         <div className="weather__city-name">{weatherData.name}</div>
         <div className="weather__header">

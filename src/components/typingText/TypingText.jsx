@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../../components/shared/modal/Modal';
-import photo from '../../images/Yulia.png';
-import goit from '../../images/goit.png';
+import photo from '../../images/Yulia.jpg';
+import goit from '../../images/goit.jpg';
 // import Typed from 'react-typed';
 //to install react-typed used this: npm i react-typed --legacy-peer-deps
 import './TypingText.css';
@@ -64,6 +64,7 @@ const TypingText = () => {
             <a
               href="https://github.com/YuliaDobrova/react-practice-app"
               target="_blank"
+              rel="noreferrer"
               style={{ textDecoration: 'underline', color: '#61dafb' }}
             >
               GitHub

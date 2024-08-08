@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
-import ballImage from '../../images/magic-ball.png';
+import ballImage from '../../images/magic-ball.jpg';
 import MyButton from '../shared/button/MyButton';
 import './RunningCard.css';
 

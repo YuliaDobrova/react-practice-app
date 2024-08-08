@@ -1,19 +1,19 @@
 import React from 'react';
 import sprite from '../../images/sprite.svg';
-import resume from '../../images/project-img-resume.png';
-import wizwork from '../../images/project-img-wizwork.png';
-import dental from '../../images/project-img-dental.png';
-import movie from '../../images/project-img-movie.png';
-import ball from '../../images/project-img-ball.png';
-import boards from '../../images/project-img-boards.png';
-import event from '../../images/project-img-event.png';
-import icecream from '../../images/project-img-icecream.png';
-import marsden from '../../images/project-img-marsden.png';
-import starwars from '../../images/project-img-starwars.png';
-import aimgame from '../../images/project-img-aimgame.png';
-import bookshop from '../../images/project-img-bookshop.png';
+import resume from '../../images/project-img-resume.jpg';
+import wizwork from '../../images/project-img-wizwork.jpg';
+import dental from '../../images/project-img-dental.jpg';
+import movie from '../../images/project-img-movie.jpg';
+import ball from '../../images/project-img-ball.jpg';
+import boards from '../../images/project-img-light.jpg';
+import event from '../../images/project-img-event.jpg';
+import icecream from '../../images/project-img-icecream.jpg';
+import marsden from '../../images/project-img-marsden.jpg';
+import starwars from '../../images/project-img-starwars.jpg';
+import aimgame from '../../images/project-img-aimgame.jpg';
+import bookshop from '../../images/project-img-bookshop.jpg';
 import renovation from '../../images/project-img-renovation.jpeg';
-import engineering from '../../images/project-img-AMwebsite.png';
+import engineering from '../../images/project-img-AMwebsite.jpg';
 import './Projects.css';
 
 const Projects = () => {
@@ -28,7 +28,7 @@ const Projects = () => {
             <div>
               <a
                 className="project-link"
-                href="https://yuliiadobrova-resume.vercel.app/"
+                href="https://yuliiadobrova.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -119,40 +119,6 @@ const Projects = () => {
           <img src={wizwork} alt="wizwork" />
         </div>
 
-        {/* MARSDEN WEBSITE */}
-        <div className="project-card">
-          <div className="project-card-disc">
-            <h1 className="project-card-title">Personal Website</h1>
-            <div>
-              <a
-                className="project-link"
-                href="http://scott-marsden.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg className="project-icon" width="30" height="30">
-                  <use href={sprite + '#icon-link'}></use>
-                </svg>
-                <br />
-                <span className="project-link-text">Link to the Project</span>
-              </a>
-              <a
-                className="project-link"
-                href="https://github.com/YuliaDobrova/marsden-website"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg className="project-icon" width="30" height="30">
-                  <use href={sprite + '#icon-github'}></use>
-                </svg>
-                <br />
-                <span className="project-link-text">Link to the Code</span>
-              </a>
-            </div>
-          </div>
-          <img src={marsden} alt="marsden" />
-        </div>
-
         {/* MOVIE SEARCH*/}
         <div className="project-card">
           <div className="project-card-disc">
@@ -185,6 +151,40 @@ const Projects = () => {
             </div>
           </div>
           <img src={movie} alt="movie" />
+        </div>
+
+        {/* MARSDEN WEBSITE */}
+        <div className="project-card">
+          <div className="project-card-disc">
+            <h1 className="project-card-title">Personal Website</h1>
+            <div>
+              <a
+                className="project-link"
+                href="http://scott-marsden.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-link'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Project</span>
+              </a>
+              <a
+                className="project-link"
+                href="https://github.com/YuliaDobrova/marsden-website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg className="project-icon" width="30" height="30">
+                  <use href={sprite + '#icon-github'}></use>
+                </svg>
+                <br />
+                <span className="project-link-text">Link to the Code</span>
+              </a>
+            </div>
+          </div>
+          <img src={marsden} alt="marsden" />
         </div>
 
         {/* RENOVATION */}

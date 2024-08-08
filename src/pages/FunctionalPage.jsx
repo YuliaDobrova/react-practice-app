@@ -15,6 +15,7 @@ import DateComponent from '../components/date/DateComponent';
 import ResponsivePhrase from '../components/responsivePhrase/ResponsivePhrase';
 import useWindowDimensions from '../hooks/widthHook';
 import NewYearTimer from '../components/newYearTimer/TimerBitrhday';
+import Speech from '../components/speech/Speech';
 
 const FunctionalPage = () => {
   const { width } = useWindowDimensions();
@@ -41,6 +42,8 @@ const FunctionalPage = () => {
       <Timer />
       <hr style={{ margin: 15 }} />
       <RandomNumber />
+      <hr style={{ margin: 15 }} />
+      <Speech />
       <hr style={{ margin: 15 }} />
       <ColorSwitcher />
       <hr style={{ margin: 15 }} />
